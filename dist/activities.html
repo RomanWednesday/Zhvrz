@@ -1,20 +1,26 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/activities.css">
     <link rel="stylesheet" href="css/normalize.css">
 </head>
+
 <body>
+    <!-- Враппер для разделение на левую и правую часть -->
     <div class="main-area">
+
+
+        <!-- Боковое меню -->
         <aside class="aside-menu">
             <div class="aside-open-menu">
                 <button class="aside-icon menu-icon">
-                        <img src="img/menu-icon.svg" width="32" height="32" alt="Открыть меню">
+                    <img src="img/menu-icon.svg" width="32" height="32" alt="Открыть меню">
                 </button>
             </div>
             <div class="aside-search">
@@ -28,55 +34,66 @@
                 </button>
             </div>
         </aside>
+
+
+        <!-- Враппер для шапки с контентом -->
         <div class="main-content">
-            <header class = "main-header">
-                <nav class = "main-navigation">
-                    <a href="#" ><img src="img/logo.svg" width="224" height="33" alt="Железногорский вагоноремонтный завод"></a>
-                        <ul class="navigation-list">
-                            <li class="navigation-item active-item"><a href="#" >Направления</a></li>
-                            <li class = "navigation-item"><a href="#">Предприятие</a></li>
-                            <li class = "navigation-item"><a href="#">Контакты</a></li>
-                        </ul>
+
+
+            <!-- Шапка -->
+            <header class="main-header">
+                <nav class="main-navigation">
+                    <a href="#"><img src="img/logo.svg" width="224" height="33"
+                            alt="Железногорский вагоноремонтный завод"></a>
+                    <ul class="navigation-list">
+                        <li class="navigation-item active-item"><a href="#">Направления</a></li>
+                        <li class="navigation-item"><a href="#">Предприятие</a></li>
+                        <li class="navigation-item"><a href="#">Контакты</a></li>
+                    </ul>
                 </nav>
                 <div class="main-contacts">
-                        <span class = "phone-number"> 8 800 300 30 30 </span>
-                        <button class="callback">Оставить заявку</button>
+                    <span class="phone-number"> 8 800 300 30 30 </span>
+                    <button class="callback">Оставить заявку</button>
                 </div>
-
             </header>
-            <section class ="activities">
+
+
+            <!-- Контент -->
+            <section class="activities">
                 <ul class="breadcrumbs">
-                   <li><a href = "#">Главная страница</a></li>
+                    <li><a href="#">Главная страница</a></li>
                     <li>Направления</li>
                 </ul>
-                    <h2>Направления деятельности</h2>
-                    <ul class="activities-list">
-                        <li class="activities-item">
-                            <img src="img/repairs.png" alt="Ремонт вагонов">
-                            <h3><a href = "#">Ремонт вагонов</a></h3>
-                        </li>
-                        <li class="activities-item">
-                            <img src="img/handling.png" alt="Разделка вагонов">
-                            <h3><a href = "#">Разделка вагонов</a></h3>
-                        </li>
-                        <li class="activities-item">
-                            <img src="img/transportation.png" alt="Транспортировка грузов">
-                            <h3><a href = "#">Транспортировка грузов</a></h3>
-                        </li>
-                        <li class="activities-item">
-                            <img src="img/storage.png" alt="Хранение">
-                            <h3><a href = "#">Хранение</a></h3>
-                        </li>
-                        <li class="activities-item">
-                            <img src="img/preparation.png" alt="Подготовка под ремонт">
-                            <h3><a href = "#">Подготовка под ремонт</a></h3>
-                        </li>
-                        <li class="activities-item">
-                            <img src="img/others.png" alt="Прочие услуги">
-                            <h3><a href = "#">Прочие услуги</a></h3>
-                        </li>
-                    </ul>
+                <h2>Направления деятельности</h2>
+                <ul class="activities-list">
+                    <li class="activities-item">
+                        <img src="img/repairs.png" alt="Ремонт вагонов">
+                        <h3><a href="#">Ремонт вагонов</a></h3>
+                    </li>
+                    <li class="activities-item">
+                        <img src="img/handling.png" alt="Разделка вагонов">
+                        <h3><a href="#">Разделка вагонов</a></h3>
+                    </li>
+                    <li class="activities-item">
+                        <img src="img/transportation.png" alt="Транспортировка грузов">
+                        <h3><a href="#">Транспортировка грузов</a></h3>
+                    </li>
+                    <li class="activities-item">
+                        <img src="img/storage.png" alt="Хранение">
+                        <h3><a href="#">Хранение</a></h3>
+                    </li>
+                    <li class="activities-item">
+                        <img src="img/preparation.png" alt="Подготовка под ремонт">
+                        <h3><a href="#">Подготовка под ремонт</a></h3>
+                    </li>
+                    <li class="activities-item">
+                        <img src="img/others.png" alt="Прочие услуги">
+                        <h3><a href="#">Прочие услуги</a></h3>
+                    </li>
+                </ul>
             </section>
-    </div>
+
+        </div>
 </body>
+
 </html>

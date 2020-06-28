@@ -20,7 +20,7 @@ gulp.task('serve', function (done) {
 
     browserSync.init({
         server: 'dist',
-        notify: false
+        notify: false,
     });
 
     gulp.watch("scss/*.scss", gulp.series('sass'));
