@@ -30,7 +30,6 @@ a{
     font-family: 'Formular Bold';
     font-size: 13px;
     text-transform: uppercase;
-
     color: #0101BF;
   }
 
@@ -50,6 +49,9 @@ a{
       height: 32px;
     }
   }
+  button {
+    cursor: pointer;
+  }
 }
 
 // <----------aside------------->
@@ -58,13 +60,34 @@ a{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 80px;
+
+  .aside-open-menu{
+    background-image: url("../img/menu-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   .aside-search {
     flex-grow: 1;
+    background-image: url("../img/search-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+  }
+  .aside-mail {
+
+      background-image: url("../img/mail-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
   }
   height: 100vh;
+
+  button {
+    cursor: pointer;
+  }
+
 }
 .aside-icon {
-  padding: 25px;
+  height: 80px;
 }
 
 
@@ -109,10 +132,12 @@ a{
   //align-items: center;
   align-self: stretch;
 
+
+
 }
 
 
-.main-contacts {
+.header-contacts {
   display: flex;
   width: 315px;
   justify-content: space-between;
@@ -122,11 +147,10 @@ a{
 
 .main-area {
   display: flex;
-  margin: 0 auto;
+
 }
 
 .main-content{
-  display: inline-block;
   padding: 0 80px;
   max-width: 1286px;
   margin: 0 auto;

@@ -12,21 +12,20 @@
 <body>
     <div class="main-area">
         <aside class="aside-menu">
-            <div class="aside-open-menu">
-                <button class="aside-icon menu-icon">
-                        <img src="img/menu-icon.svg" width="32" height="32" alt="Открыть меню">
-                </button>
-            </div>
-            <div class="aside-search">
-                <button class="aside-icon search-icon">
-                    <img src="img/search-icon.svg" width="32" height="32" alt="Поиск">
-                </button>
-            </div>
-            <div class="aside-mail">
-                <button class="aside-icon mail-icon">
-                    <img src="img/mail-icon.svg" width="32" height="32" alt="Контакты">
-                </button>
-            </div>
+            <button type="button" class="aside-open-menu">
+                <div class="aside-icon menu-icon">
+                </div>
+            </button>
+            <button type="button" class="aside-search">
+                <div class="aside-icon search-icon">
+                   <a href="#"></a>
+                </div>
+            </button>
+            <button type="button" class="aside-mail">
+                <div class="aside-icon mail-icon">
+
+                </div>
+            </button>
         </aside>
         <div class="main-content">
             <header class = "main-header">
@@ -38,9 +37,9 @@
                             <li class = "navigation-item"><a href="#">Контакты</a></li>
                         </ul>
                 </nav>
-                <div class="main-contacts">
-                        <span class = "phone-number"> 8 800 300 30 30 </span>
-                        <button class="callback">Оставить заявку</button>
+                <div class="header-contacts">
+                        <p class = "phone-number"> 8 800 300 30 30 </p>
+                        <button type="button" class="callback">Оставить заявку</button>
                 </div>
 
             </header>
@@ -77,6 +76,56 @@
                         </li>
                     </ul>
             </section>
+            <section class ="section-contacts">
+                <h1>Свяжитесь с нами</h1>
+                <div class ="block-contacts">
+                    <h2>Контакты</h2>
+                    <p>Если у вас есть вопросы по ремонту вагонов или
+                        нужна помощь, пожалуйста, позовните или оставьте заявку</p>
+                    <div class="contacts-phone">
+                        <h3>Телефон</h3>
+                        <p class ="contact-main">8 800 300 30 30</p>
+                        <small>Пн - Пт, 9:00 - 19:00</small>
+                    </div>
+                    <div class="contacts-email">
+                        <h3>E-mail</h3>
+                        <p class ="contact-main">zrd46@yandex.ru</p>
+                        <small>Общая почта</small>
+                    </div>
+                    <div>
+                        <img src="img/map.png" alt = "Наш адрес улица , дом">
+                    </div>
+                </div>
+                <form action="">
+                    <p>
+                        <label>
+                            Как вас зовут *
+                            <input type ="text" placeholder="Роман Абрамович">
+                        </label>
+                        <hr>
+                    </p>
+                    <p>
+                        <label>
+                            Телефон *
+                            <input type ="text" placeholder="+7 900 200 20 20">
+                        </label>
+                        <hr>
+                    </p>
+                    <p>
+                        <label>
+                            Электронная почта *
+                            <input type ="text" placeholder="roma.abramovich@zoltav.ru">
+                        </label>
+                        <hr>
+                    </p>
+                    <button type ="submit"> Отправить заявку </button>
+                </form>
+            </section>
+            <footer class = "main-footer">
+                <span class="copyrights">© 2020, ЗАО «Железногорский вагоноремонтный завод» </span>
+                <span class="developer">Брендинг и разработка сайта – <a href ="#">Pack&Branding</a></span>
+            </footer>
     </div>
+
 </body>
 </html>
