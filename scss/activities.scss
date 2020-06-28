@@ -76,13 +76,14 @@ a{
   min-height: 80px;
   align-items: center;
 
-  a{
-    padding: 32px 0;
-  }
+
 }
 
 .navigation-item {
-  padding: 29px 20px;
+  padding: 29px 20px 0 20px;
+  a{
+    padding: 32px 0 29px 0;
+  }
 }
 
 .navigation-item.active-item{
@@ -101,7 +102,7 @@ a{
   text-transform: uppercase;
 
   margin: 0;
-  margin-left: 20px;
+  margin-left: 35px;
 
   display: flex;
   justify-content: space-between;
@@ -127,6 +128,8 @@ a{
 .main-content{
   display: inline-block;
   padding: 0 80px;
+  max-width: 1286px;
+  margin: 0 auto;
 }
 
 
@@ -209,3 +212,4 @@ a{
   font-weight: 400;
   font-style: normal;
 }
+
