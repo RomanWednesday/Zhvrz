@@ -38,92 +38,96 @@
                         </ul>
                 </nav>
                 <div class="header-contacts">
-                        <p class = "phone-number"> 8 800 300 30 30 </p>
+                        <span class = "phone-number"> 8 800 300 30 30 </span>
                         <button type="button" class="callback">Оставить заявку</button>
                 </div>
 
             </header>
-            <section class ="activities">
+            <section class ="activities-section">
                 <ul class="breadcrumbs">
                    <li><a href = "#">Главная страница</a></li>
                     <li>Направления</li>
                 </ul>
-                    <h2>Направления деятельности</h2>
+                    <h1>Направления деятельности</h1>
                     <ul class="activities-list">
                         <li class="activities-item">
                             <img src="img/repairs.png" alt="Ремонт вагонов">
-                            <h3><a href = "#">Ремонт вагонов</a></h3>
+                            <h2><a href = "#">Ремонт вагонов</a></h2>
                         </li>
                         <li class="activities-item">
                             <img src="img/handling.png" alt="Разделка вагонов">
-                            <h3><a href = "#">Разделка вагонов</a></h3>
+                            <h2><a href = "#">Разделка вагонов</a></h2>
                         </li>
                         <li class="activities-item">
                             <img src="img/transportation.png" alt="Транспортировка грузов">
-                            <h3><a href = "#">Транспортировка грузов</a></h3>
+                            <h2><a href = "#">Транспортировка грузов</a></h2>
                         </li>
                         <li class="activities-item">
                             <img src="img/storage.png" alt="Хранение">
-                            <h3><a href = "#">Хранение</a></h3>
+                            <h2><a href = "#">Хранение</a></h2>
                         </li>
                         <li class="activities-item">
                             <img src="img/preparation.png" alt="Подготовка под ремонт">
-                            <h3><a href = "#">Подготовка под ремонт</a></h3>
+                            <h2><a href = "#">Подготовка под ремонт</a></h2>
                         </li>
                         <li class="activities-item">
                             <img src="img/others.png" alt="Прочие услуги">
-                            <h3><a href = "#">Прочие услуги</a></h3>
+                            <h2><a href = "#">Прочие услуги</a></h2>
                         </li>
                     </ul>
             </section>
-            <section class ="section-contacts">
-                <h1>Свяжитесь с нами</h1>
+            <section class ="contacts-section">
                 <div class ="block-contacts">
+                    <span>Свяжитесь с нами</span>
                     <h2>Контакты</h2>
                     <p>Если у вас есть вопросы по ремонту вагонов или
-                        нужна помощь, пожалуйста, позовните или оставьте заявку</p>
-                    <div class="contacts-phone">
-                        <h3>Телефон</h3>
-                        <p class ="contact-main">8 800 300 30 30</p>
-                        <small>Пн - Пт, 9:00 - 19:00</small>
-                    </div>
-                    <div class="contacts-email">
-                        <h3>E-mail</h3>
-                        <p class ="contact-main">zrd46@yandex.ru</p>
-                        <small>Общая почта</small>
-                    </div>
-                    <div>
-                        <img src="img/map.png" alt = "Наш адрес улица , дом">
+                        нужна помощь, пожалуйста, позвоните или оставьте заявку</p>
+                    <div class = "contacts-list">
+                        <div class="contacts-phone">
+                            <h3>Телефон</h3>
+                            <p> <span class ="contact">8 800 300 30 30</span>
+                                <br> Пн - Пт, 9:00 - 19:00</p>
+                        </div>
+                        <div class="contacts-email">
+                            <h3>E-mail</h3>
+                            <p> <span class ="contact">zrd46@yandex.ru</span>
+                            Общая почта</p>
+                        </div>
+                        <div class = "contacts-map">
+                            <img src="img/map.png" alt = "Наш адрес улица , дом">
+                        </div>
                     </div>
                 </div>
-                <form action="">
-                    <p>
-                        <label>
-                            Как вас зовут *
-                            <input type ="text" placeholder="Роман Абрамович">
-                        </label>
-                        <hr>
-                    </p>
-                    <p>
-                        <label>
-                            Телефон *
-                            <input type ="text" placeholder="+7 900 200 20 20">
-                        </label>
-                        <hr>
-                    </p>
-                    <p>
-                        <label>
-                            Электронная почта *
-                            <input type ="text" placeholder="roma.abramovich@zoltav.ru">
-                        </label>
-                        <hr>
-                    </p>
-                    <button type ="submit"> Отправить заявку </button>
-                </form>
+
+                <div class="block-request">
+                    <form action="">
+                        <div class="request-input-group">
+                            <p>
+                                <label>
+                                    Как вас зовут *
+                                    <input type ="text" placeholder="Роман Абрамович">
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    Телефон *
+                                    <input type ="text" placeholder="+7 900 200 20 20">
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    Электронная почта *
+                                    <input type ="text" placeholder="roma.abramovich@zoltav.ru">
+                                </label>
+                            </p>
+                        </div>
+                        <button class = "primary-button" type = "submit"> Отправить заявку </button>
+                    </form>
+                </div>
             </section>
             <footer class = "main-footer">
-                <span class="copyrights">© 2020, ЗАО «Железногорский вагоноремонтный завод» </span>
-                <span class="developer">Брендинг и разработка сайта – <a href ="#">Pack&Branding</a></span>
+                <p class="copyrights">© 2020, ЗАО «Железногорский вагоноремонтный завод» </p>
+                <p class="developer">Брендинг и разработка сайта – <a href ="#">Pack&Branding</a></p>
             </footer>
     </div>
 

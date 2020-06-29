@@ -1,29 +1,12 @@
 @import "fonts";
 @import "variables";
-
-body {
-  margin: 0 auto;
-}
-
-*{
-  box-sizing: border-box;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-button {
-  border: none;
-  background-color: initial;
-}
+@import "global";
 
 
 a{
-  text-decoration: none;
-  color: black;
+  color: #333333;
 }
+
 
 .main-header{
   display: flex;
@@ -39,7 +22,6 @@ a{
   .phone-number {
     margin: 0;
 
-    font-family: "Formular";
     font-size: 13px;
     line-height: 16px;
 
@@ -64,6 +46,9 @@ a{
   flex-direction: column;
   justify-content: space-between;
   width: 80px;
+
+  position: fixed;
+  left: 0;
 
   .aside-open-menu{
     background-image: url("../img/menu-icon.svg");
@@ -115,8 +100,7 @@ a{
 .navigation-item.active-item{
   a {
     border-bottom: 3px solid $text-blue;
-    color: #333333;
-    opacity: 0.5;
+    color: rgba(33,33,33,0.5);
   }
 }
 
@@ -150,7 +134,7 @@ a{
 
 .main-area {
   display: flex;
-
+  padding-left: 80px;
 }
 
 .main-content{
@@ -164,24 +148,21 @@ a{
 
 //<----------activities------------->
 
-.activities {
+.activities-section {
   padding-top: 25px;
-  font-family: Formular;
 
-  h2{
+  h1{
     font-family: Formular Bold;
     font-size: 40px;
     line-height: 60px;
     margin-top: 18px;
     margin-bottom: 55px;
-    color: #333333;
   }
 
   .breadcrumbs {
     display: flex;
     font-size: 14px;
     line-height: 28px;
-    color: #333333;
     opacity: 0.7;
     margin-top: 0;
 
@@ -194,6 +175,9 @@ a{
       background-color: #C4C4C4;
       margin: 0 16px;
     }
+    & li:last-child {
+      opacity: 0.5;
+    }
   }
 
 }
@@ -201,15 +185,15 @@ a{
 .activities-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -40px;
+  margin:0 -40px -40px 0;
+
 
   li {
     margin-bottom: 40px;
     margin-right: 40px;
   }
 
-  h3 {
-    font-family: Formular;
+  h2 {
     font-size: 23px;
     line-height: 28px;
   }
@@ -220,4 +204,130 @@ a{
 
 }
 
+//<----------section-contacts------------->
 
+.contacts-section {
+  padding: 80px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  span {
+    margin-top: 0;
+    font-family: Formular;
+    font-size: 16px;
+    line-height: 20px;
+    flex-grow: 1;
+  }
+  h2 {
+    margin-top: 24px;
+    margin-bottom: 20px;
+    font-family: Formular Bold;
+    font-size: 40px;
+    line-height: 53px;
+  }
+  hr {
+    opacity: 0.2;
+  }
+}
+
+.block-contacts {
+  width: 483px;
+}
+
+.contacts-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  div {
+    width: 200px;
+  }
+  h3 + p {
+    margin-top: 0;
+  }
+
+  .contact{
+    margin-top: 0;
+    color: $text-blue;
+    font-family: Formular;
+    font-size: 23px;
+    line-height: 32px;
+  }
+  .contacts-map {
+    margin-top: 25px;
+  }
+}
+
+h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+.block-request {
+  padding-top: 50px;
+  width: 483px;
+  input {
+    display: block;
+    width: 100%;
+  }
+  .primary-button {
+    position: relative;
+    width: 482px;
+    height: 60px;
+    padding: 0px 32px;
+    text-align: left;
+    position: relative;
+
+    &::after{
+      position: absolute;
+      right:32px;
+      top: 22px;
+
+      content: " ";
+      display: block;
+      width: 50px;
+      height: 15px;
+      background: url("../img/button-arrow-icon.svg");
+      background-repeat: no-repeat;
+      background-position: 95% 50%;
+    }
+
+  }
+
+  p{
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.request-input-group {
+  margin-bottom: 60px;
+
+}
+
+
+.main-footer {
+padding: 40px 0;
+
+  p {
+    display: inline-block;
+    margin-top: 0;
+  }
+
+  .copyrights {
+    margin-right: 190px;
+  }
+  .developer {
+    a{
+      color: $text-blue;
+    }
+  }
+
+}
+
+hr {
+  position: absolute;
+  width: 100%;
+}
