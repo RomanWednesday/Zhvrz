@@ -1,0 +1,103 @@
+.contacts-section {
+  padding: 80px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  span {
+    margin-top: 0;
+    font-family: Formular;
+    font-size: 16px;
+    line-height: 20px;
+    flex-grow: 1;
+  }
+  h2 {
+    margin-top: 24px;
+    margin-bottom: 20px;
+    font-family: Formular Bold;
+    font-size: 40px;
+    line-height: 53px;
+  }
+
+  h3 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  hr {
+    opacity: 0.2;
+  }
+}
+
+.block-contacts {
+  width: 483px;
+}
+
+//<----------contacts-list------------->
+
+.contacts-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  div {
+    width: 200px;
+  }
+  h3 + p {
+    margin-top: 0;
+  }
+
+  .contact{
+    margin-top: 0;
+    color: $text-blue;
+    font-family: Formular;
+    font-size: 23px;
+    line-height: 32px;
+  }
+  .contacts-map {
+    margin-top: 25px;
+  }
+}
+
+//<----------request-form------------->
+
+.block-request {
+  padding-top: 50px;
+  width: 483px;
+  input {
+    display: block;
+    width: 100%;
+  }
+  .primary-button {
+    position: relative;
+    width: 482px;
+    height: 60px;
+    padding: 0px 32px;
+    text-align: left;
+    position: relative;
+
+    &::after{
+      position: absolute;
+      right:32px;
+      top: 22px;
+
+      content: " ";
+      display: block;
+      width: 50px;
+      height: 15px;
+      background: url("../img/button-arrow-icon.svg");
+      background-repeat: no-repeat;
+      background-position: 95% 50%;
+    }
+
+  }
+
+  p{
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.request-input-group {
+  margin-bottom: 60px;
+}

@@ -1,0 +1,17 @@
+.main-footer {
+  padding: 40px 0;
+
+  p {
+    display: inline-block;
+    margin-top: 0;
+  }
+
+  .copyrights {
+    margin-right: 190px;
+  }
+  .developer {
+    a{
+      color: $text-blue;
+    }
+  }
+}

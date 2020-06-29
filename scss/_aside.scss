@@ -1,0 +1,36 @@
+.aside-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80px;
+
+  position: fixed;
+  left: 0;
+
+  .aside-open-menu{
+    background-image: url("../img/menu-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .aside-search {
+    flex-grow: 1;
+    background-image: url("../img/search-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+  }
+  .aside-mail {
+
+    background-image: url("../img/mail-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  height: 100vh;
+
+  button {
+    cursor: pointer;
+  }
+
+}
+.aside-icon {
+  height: 80px;
+}
