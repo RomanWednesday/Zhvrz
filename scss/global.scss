@@ -1,4 +1,5 @@
 @import "variables";
+
 body {
   margin: 0 auto;
   font-family: "Formular";
@@ -92,10 +93,13 @@ h1 {
   line-height: 20px;
   cursor: pointer;
   border: 3px solid $text-blue;
+  & .rounded-button {
+  }
 
   &:focus{
     outline: none;
     border-color: black;
+    color: black;
   }
 }
 

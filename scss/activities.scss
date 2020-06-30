@@ -7,32 +7,48 @@
 @import "main-footer";
 
 
+.activities a{
+  color: #333333;
+}
 
-
-
-
-
-//<----------activities------------->
+//<----------main content------------->
 
 .activities {
   padding-left: 80px;
   display: flex;
 }
 
+.main-content{
+  padding: 0 80px;
+  max-width: 1286px;
+  margin: 0 auto;
+}
+
+
+//<----------activities------------->
+
 .activities-section {
   padding-top: 25px;
-
-  h1{
+  max-width: 1126px;
+  margin: 0 auto;
+  h1 {
+    font-family: Formular Bold;
+    font-size: 40px;
+    line-height: 60px;
     margin-top: 18px;
     margin-bottom: 32px;
+    margin-bottom: 33px;
   }
 
-}
+
+  }
+
 
 .activities-list {
   display: flex;
   flex-wrap: wrap;
-  margin:0 -40px -45px 0;
+  margin: 0 -40px -45px 0;
+
 
   li {
     margin-bottom: 45px;
@@ -44,12 +60,14 @@
     font-size: 23px;
     line-height: 28px;
   }
+
   a {
     color: #333333;
 
-    &:hover {
+    a:hover {
       color: $text-blue;
     }
+
   }
 }
 

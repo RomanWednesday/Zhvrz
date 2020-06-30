@@ -75,6 +75,7 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -174,8 +175,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
-  overflow: visible;
+input {
+  /* 1 */
 }
 
 /**

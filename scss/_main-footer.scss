@@ -1,8 +1,13 @@
-@import "global";
+@import "variables";
 
 .main-footer {
   padding: 40px 0;
-
+  margin: 80px auto 0 0;
+  border-top: 1px solid $borderColor;
+  .footer-wrapper {
+    max-width: 1126px;
+    margin: 0 auto;
+  }
   p {
     display: inline-block;
     margin-top: 0;
