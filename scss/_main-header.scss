@@ -1,12 +1,22 @@
-.main-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  .callback{
-    font-family: 'Formular Bold';
+@import "variables";
+
+.main-header {
+  border-bottom: 1px solid $borderColor;
+  height: 80px;
+  
+  .callback {
+    font-family: "Formular Bold";
     font-size: 13px;
     text-transform: uppercase;
     color: $text-blue;
+  }
+
+  .header-wrapper {
+    display: flex;
+    max-width: 1126px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
   }
 
   .phone-number {
@@ -15,7 +25,7 @@
     font-size: 13px;
     line-height: 16px;
 
-    &::before{
+    &::before {
       vertical-align: middle;
       content: " ";
       display: inline-block;
@@ -35,29 +45,26 @@
   justify-content: space-between;
 }
 
-
 //<----------navigation------------->
 
-.main-navigation{
+.main-navigation {
   display: flex;
   justify-content: space-between;
   min-height: 80px;
   align-items: center;
-
-
 }
 
 .navigation-item {
   padding: 29px 20px 0 20px;
-  a{
+  a {
     padding: 32px 0 29px 0;
   }
 }
 
-.navigation-item.active-item{
+.navigation-item.active-item {
   a {
     border-bottom: 3px solid $text-blue;
-    color: rgba(33,33,33,0.5);
+    color: rgba(33, 33, 33, 0.5);
   }
 }
 

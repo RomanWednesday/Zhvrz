@@ -31,8 +31,5 @@ gulp.task('serve', function (done) {
     done();
 })
 
-
-
-
 gulp.task('default', gulp.series(['sass', 'serve']));
 

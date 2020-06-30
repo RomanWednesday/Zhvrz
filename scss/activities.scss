@@ -6,11 +6,9 @@
 @import "contacts";
 @import "main-footer";
 
-
-.activities a{
+.activities a {
   color: #333333;
 }
-
 
 //<----------main content------------->
 
@@ -18,19 +16,17 @@
   padding-left: 80px;
 }
 
-.main-content{
-  padding: 0 80px;
-  max-width: 1286px;
+.main-content {
   margin: 0 auto;
 }
-
 
 //<----------activities------------->
 
 .activities-section {
   padding-top: 25px;
-
-  h1{
+  max-width: 1126px;
+  margin: 0 auto;
+  h1 {
     font-family: Formular Bold;
     font-size: 40px;
     line-height: 60px;
@@ -45,27 +41,25 @@
     opacity: 0.7;
     margin-top: 0;
 
-    & li:not(:first-child)::before{
+    & li:not(:first-child)::before {
       content: " ";
       display: inline-block;
       vertical-align: middle;
       width: 8px;
       height: 1px;
-      background-color: #C4C4C4;
+      background-color: #c4c4c4;
       margin: 0 16px;
     }
     & li:last-child {
       opacity: 0.5;
     }
   }
-
 }
 
 .activities-list {
   display: flex;
   flex-wrap: wrap;
-  margin:0 -40px -45px 0;
-
+  margin: 0 -40px -45px 0;
 
   li {
     margin-bottom: 45px;
@@ -81,8 +75,4 @@
   a:hover {
     color: $text-blue;
   }
-
 }
-
-
-
