@@ -1,10 +1,10 @@
-@import "fonts";
-@import "variables";
-@import "global";
-@import "main-header";
-@import "aside";
-@import "contacts";
-@import "main-footer";
+@import "../variables";
+@import "../global";
+@import "../main-header";
+@import "../aside";
+@import "../contacts";
+@import "../main-footer";
+@import "../fonts";
 
 .activities a {
   color: #333333;
