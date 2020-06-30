@@ -1,0 +1,67 @@
+@import "variables";
+
+body {
+  margin: 0 auto;
+  font-family: "Formular";
+  color: #333333;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+button {
+  border: none;
+  background-color: initial;
+}
+
+a{
+  text-decoration: none;
+}
+
+p {
+  line-height: 28px;
+  font-size: 16px;
+  color: rgba(33,33,33,0.5);
+}
+
+label {
+  color: rgba(33,33,33, 1);
+}
+
+input,
+input::placeholder {
+  color: rgba(33,33,33, 1);
+  font-family: Formular;
+  font-size: 23px;
+  line-height: 32px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+input[type = "text"] {
+  border: none;
+  border-bottom: 1px solid rgba(33,33,33, 0.2);
+}
+
+.primary-button {
+  font-family: Formular;
+  color: $text-blue;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  border: 3px solid $text-blue;
+  & .rounded-button {
+  }
+
+  &:focus{
+    outline: none;
+    border-color: black;
+    color: black;
+  }
+}

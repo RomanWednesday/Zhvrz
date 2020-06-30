@@ -1,157 +1,47 @@
-body {
-  margin: 0 auto;
+@import "fonts";
+@import "variables";
+@import "global";
+@import "main-header";
+@import "aside";
+@import "contacts";
+@import "main-footer";
+
+
+.activities a{
+  color: #333333;
 }
 
-*{
-  box-sizing: border-box;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-button {
-  border: none;
-  background-color: initial;
-}
-
-
-a{
-  text-decoration: none;
-  color: black;
-}
-
-.main-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  .callback{
-    font-family: 'Formular Bold';
-    font-size: 13px;
-    text-transform: uppercase;
-
-    color: #0101BF;
-  }
-
-  .phone-number {
-    margin: 0;
-
-    font-family: "Formular";
-    font-size: 13px;
-    line-height: 16px;
-
-    &::before{
-      vertical-align: middle;
-      content: " ";
-      display: inline-block;
-      background-image: url("../img/phone-icon.svg");
-      width: 32px;
-      height: 32px;
-    }
-  }
-}
-
-// <----------aside------------->
-
-.aside-menu{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  .aside-search {
-    flex-grow: 1;
-  }
-  height: 100vh;
-}
-.aside-icon {
-  padding: 25px;
-}
-
-
-//<----------navigation------------->
-
-.main-navigation{
-  display: flex;
-  justify-content: space-between;
-  min-height: 80px;
-  align-items: center;
-
-  a{
-    padding: 32px 0;
-  }
-}
-
-.navigation-item {
-  padding: 29px 20px;
-}
-
-.navigation-item.active-item{
-  a {
-    border-bottom: 3px solid #0101BF;
-    color: #333333;
-    opacity: 0.5;
-  }
-}
-
-.navigation-list {
-  font-family: "Formular Bold";
-
-  font-size: 13px;
-  line-height: 16px;
-  text-transform: uppercase;
-
-  margin: 0;
-  margin-left: 20px;
-
-  display: flex;
-  justify-content: space-between;
-  //align-items: center;
-  align-self: stretch;
-
-}
-
-
-.main-contacts {
-  display: flex;
-  width: 315px;
-  justify-content: space-between;
-}
 
 //<----------main content------------->
 
-.main-area {
-  display: flex;
-  margin: 0 auto;
+.activities {
+  padding-left: 80px;
 }
 
 .main-content{
-  display: inline-block;
   padding: 0 80px;
+  max-width: 1286px;
+  margin: 0 auto;
 }
-
-
 
 
 //<----------activities------------->
 
-.activities {
+.activities-section {
   padding-top: 25px;
-  font-family: Formular;
 
-  h2{
+  h1{
     font-family: Formular Bold;
     font-size: 40px;
     line-height: 60px;
     margin-top: 18px;
-    margin-bottom: 55px;
-    color: #333333;
+    margin-bottom: 33px;
   }
 
   .breadcrumbs {
     display: flex;
     font-size: 14px;
     line-height: 28px;
-    color: #333333;
     opacity: 0.7;
     margin-top: 0;
 
@@ -164,6 +54,9 @@ a{
       background-color: #C4C4C4;
       margin: 0 16px;
     }
+    & li:last-child {
+      opacity: 0.5;
+    }
   }
 
 }
@@ -171,41 +64,25 @@ a{
 .activities-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -40px;
+  margin:0 -40px -45px 0;
+
 
   li {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
     margin-right: 40px;
   }
 
-  h3 {
-    font-family: Formular;
+  h2 {
+    margin-top: 25px;
     font-size: 23px;
     line-height: 28px;
   }
 
   a:hover {
-    color: #0101BF;
+    color: $text-blue;
   }
 
 }
 
-@font-face {
-  font-family: 'Formular Bold';
-  src: local('Formular Bold'), local('Formular-Bold'),
-  url('../fonts/Formular-Bold.woff2') format('woff2'),
-  url('../fonts/Formular-Bold.woff') format('woff'),
-  url('../fonts/Formular-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: 'Formular';
-  src: local('Formular Regular'), local('Formular-Regular'),
-  url('../fonts/Formular.woff2') format('woff2'),
-  url('../fonts/Formular.woff') format('woff'),
-  url('../fonts/Formular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
+
