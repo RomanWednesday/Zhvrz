@@ -1,3 +1,5 @@
+@import "global";
+
 .main-footer {
   padding: 40px 0;
 
@@ -9,9 +11,5 @@
   .copyrights {
     margin-right: 190px;
   }
-  .developer {
-    a{
-      color: $text-blue;
-    }
-  }
+
 }
