@@ -49,6 +49,43 @@ input[type="text"] {
   border-bottom: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+h1 {
+  font-family: Formular Bold;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.content-wrapper {
+
+  padding: 0 80px;
+  max-width: 1286px;
+  margin: 0 auto;
+}
+
+.breadcrumbs {
+  display: flex;
+  font-size: 14px;
+  line-height: 28px;
+  opacity: 0.7;
+  margin-top: 0;
+  a{
+    color: #333333;
+  }
+
+  & li:not(:first-child)::before{
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    width: 8px;
+    height: 1px;
+    background-color: #333333;
+    margin: 0 16px;
+  }
+  & li:last-child {
+    opacity: 0.5;
+  }
+}
+
 .primary-button {
   font-family: Formular;
   color: $text-blue;
@@ -56,12 +93,40 @@ input[type="text"] {
   line-height: 20px;
   cursor: pointer;
   border: 3px solid $text-blue;
-  & .rounded-button {
-  }
 
   &:focus {
     outline: none;
     border-color: black;
-    color: black;
   }
 }
+
+.primary-rounded-button
+{
+  font-family: Formular Bold;
+ background-image: url("../../img/primary-button-blue.svg");
+  background-size: 100% 100%;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+
+  color: #fff;
+  &.transparent{
+    background-image: url("../../img/primary-button-transparent.svg");
+    color: $text-blue;
+  }
+}
+
+a.primary-rounded-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+a.primary-link {
+  color: $text-blue;
+}
+
+
+
+

@@ -3,6 +3,8 @@
 .main-header {
   border-bottom: 1px solid $borderColor;
   height: 80px;
+  margin: 0 auto;
+  width: 100%;
   
   .callback {
     font-family: "Formular Bold";
@@ -55,9 +57,10 @@
 }
 
 .navigation-item {
-  padding: 29px 20px 0 20px;
-  a {
+  padding: 32px 20px 0 20px;
+  a{
     padding: 32px 0 29px 0;
+    color: #333333;
   }
 }
 
