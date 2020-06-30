@@ -5,59 +5,26 @@
 @import "aside";
 @import "contacts";
 @import "main-footer";
-@import "normalize";
 
 
-.activities a{
-  color: #333333;
-}
 
 
-//<----------main content------------->
 
-.activities {
-  padding-left: 80px;
-}
-
-.main-content{
-  padding: 0 80px;
-  max-width: 1286px;
-  margin: 0 auto;
-}
 
 
 //<----------activities------------->
+
+.activities {
+  padding-left: 80px;
+  display: flex;
+}
 
 .activities-section {
   padding-top: 25px;
 
   h1{
-    font-family: Formular Bold;
-    font-size: 40px;
-    line-height: 60px;
     margin-top: 18px;
-    margin-bottom: 33px;
-  }
-
-  .breadcrumbs {
-    display: flex;
-    font-size: 14px;
-    line-height: 28px;
-    opacity: 0.7;
-    margin-top: 0;
-
-    & li:not(:first-child)::before{
-      content: " ";
-      display: inline-block;
-      vertical-align: middle;
-      width: 8px;
-      height: 1px;
-      background-color: #C4C4C4;
-      margin: 0 16px;
-    }
-    & li:last-child {
-      opacity: 0.5;
-    }
+    margin-bottom: 32px;
   }
 
 }
@@ -66,7 +33,6 @@
   display: flex;
   flex-wrap: wrap;
   margin:0 -40px -45px 0;
-
 
   li {
     margin-bottom: 45px;
@@ -78,11 +44,13 @@
     font-size: 23px;
     line-height: 28px;
   }
+  a {
+    color: #333333;
 
-  a:hover {
-    color: $text-blue;
+    &:hover {
+      color: $text-blue;
+    }
   }
-
 }
 
 
