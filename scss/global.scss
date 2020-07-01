@@ -22,6 +22,7 @@ button {
 
 a {
   text-decoration: none;
+  color: #333333;
 }
 
 p {
@@ -54,11 +55,23 @@ h1 {
   font-size: 40px;
   line-height: 60px;
 }
-
+h2 {
+  font-family: Formular Bold;
+  font-size: 32px;
+}
+h3 {
+  font-family: Formular;
+  font-size: 23px;
+}
 .content-wrapper {
   padding: 0 80px;
   max-width: 1286px;
   margin: 0 auto;
+}
+
+.main-content {
+  width: 100%;
+  padding-left: 80px;
 }
 
 .breadcrumbs {

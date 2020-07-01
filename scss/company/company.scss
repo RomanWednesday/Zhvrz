@@ -1,0 +1,116 @@
+@import "../variables";
+@import "../global";
+@import "../main-header";
+@import "../aside";
+@import "../contacts";
+@import "../main-footer";
+@import "../fonts";
+
+.history {
+    padding: 25px 80px 0 80px;
+    &-wrapper {
+        max-width: 1126px;
+        margin: 0 auto;
+        h1 {
+            margin-bottom: 16px;
+            margin-top: 18px;
+        }
+        h2 {
+            margin-top: 48px;
+        }
+        h3 {
+            margin-top: 40px;
+        }
+    }
+}
+
+.history-period {
+    position: absolute;
+    right: 0;
+    top: 412px;
+    .history-date{
+        position: relative;
+        &:first-child{
+            margin-top: 0;
+        }
+        margin-top: 32px;
+        font-weight: bold;
+
+        &.active{
+            color: rgba(#333333, 0.5);
+            &::after{
+                position: relative;
+                display: inline-block;
+                content: "";
+                width: 50px;
+                height: 11px;
+                background: url("../../img/date-line.svg");
+                background-repeat: no-repeat;
+                background-position: 95% 50%;
+                right: 0;
+                margin-left: 24px;
+            }
+        }
+    }
+}
+
+.company-navigation-list {
+    display: flex;
+    border-bottom: 1px solid $borderColor;
+    font-family: "Formular Bold";
+    font-size: 16px;
+    :first-child {
+        padding-left: 0;
+    }
+    .navigation-item {
+        padding: 0;
+        margin-right: 32px;
+        padding-bottom: 18px;
+        &.active-item {
+            color: rgba(#333333, 0.5);
+            border-bottom: 3px solid $text-blue;
+        }
+    }
+}
+
+.history-list {
+    max-width: 750px;
+    margin-bottom: 80px;
+    .history-item {
+        .history-text {
+            margin-bottom: 36px;
+        }
+
+        .history-image {
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.navigation-block {
+    padding: 60px 80px;
+    width: 100%;
+    border-top: 1px solid $borderColor;
+    border-bottom: 1px solid $borderColor;
+    &-wrapper {
+        margin: 0 auto;
+        max-width: 1126px;
+        h3 {
+            position: relative;
+            &:after {
+                position: relative;
+                display: inline-block;
+                content: "";
+                width: 50px;
+                height: 11px;
+                background: url("../../img/button-arrow-icon.svg");
+                background-repeat: no-repeat;
+                background-position: 95% 50%;
+                left: 48px;
+            }
+        }
+    }
+}
