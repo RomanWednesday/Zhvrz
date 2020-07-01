@@ -1,0 +1,24 @@
+@import "../fonts";
+@import "../variables";
+@import "../global";
+@import "../aside/aside";
+@import "../main-header/main-header";
+@import "../main-footer/main-footer";
+@import "../contacts/contacts";
+@import "../page-summary/page-summary";
+
+.repairs-type {
+
+  .background-wrapper{
+
+    background-color: rgba(196, 196, 196, 0.1);
+  }
+
+padding-left: 80px;
+  .page-summary {
+    background-image: url("../../img/wagon-broken.png");
+  &-main {
+    margin-bottom: 65px;
+  }
+  }
+}

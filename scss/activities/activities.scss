@@ -1,10 +1,10 @@
-@import "fonts";
-@import "variables";
-@import "global";
-@import "main-header";
-@import "aside";
-@import "contacts";
-@import "main-footer";
+@import "../fonts";
+@import "../variables";
+@import "../global";
+@import "../aside/aside";
+@import "../main-header/main-header";
+@import "../main-footer/main-footer";
+@import "../contacts/contacts";
 
 
 .activities a{

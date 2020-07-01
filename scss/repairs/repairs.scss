@@ -1,10 +1,12 @@
-@import "global";
-@import "fonts";
-@import "variables";
-@import "aside";
-@import "main-header";
-@import "main-footer";
-@import "contacts";
+@import "../fonts";
+@import "../variables";
+@import "../global";
+@import "../aside/aside";
+@import "../main-header/main-header";
+@import "../main-footer/main-footer";
+@import "../contacts/contacts";
+@import "../page-summary/page-summary";
+
 
 
 
@@ -12,41 +14,13 @@
   padding-left: 80px;
   .background-wrapper {
     background-color: rgba(196, 196, 196, 0.1);
+
+  }
+  .page-summary {
+    background-image: url("../../img/repairs-broken.png");
   }
 }
 
-.page-summary {
-  padding: 25px 0 65px 80px;
-  width: 1284px;
-  margin: 0 auto;
-
-  background-image: url("../img/repairs-broken.png");
-
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-
-  h1{
-    margin-top: 18px;
-    margin-bottom: 15px;
-  }
-
-  &-main {
-    width: 610px;
-    margin-bottom: 125px;
-  }
-
-  &-links {
-    font-family: Formular Medium;
-    font-size: 16px;
-  }
-
-  &-button {
-    width: 212px;
-    height: 58px;
-    margin-right: 38px;
-  }
-}
 
 
 
