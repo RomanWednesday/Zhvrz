@@ -14,27 +14,29 @@
   padding-left: 80px;
   .background-wrapper {
     background-color: rgba(196, 196, 196, 0.1);
+    padding-left: 80px;
+    height: 453px;
   }
 }
 
 .page-summary {
-  padding: 25px 0 65px 80px;
-  max-width:: 1284px;
+  max-width: 1206px;
   margin: 0 auto;
-
   background-image: url("../../img/repairs-broken.png");
+  padding-bottom: 85px;
+  padding-top: 25px;
 
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
 
-  h1{
+  h1 {
     margin-top: 18px;
     margin-bottom: 15px;
   }
 
   &-main {
-    width: 610px;
+    max-width: 610px;
     margin-bottom: 125px;
   }
 
@@ -50,13 +52,11 @@
   }
 }
 
-
-
 // repair brochure
 
 .repair-wagons-brochure,
 .repair-details-brochure {
-padding: 35px 80px 0 80px;
+  padding: 35px 80px 0 80px;
   h2 {
     font-family: Formular Bold;
     font-size: 32px;
@@ -65,18 +65,18 @@ padding: 35px 80px 0 80px;
   }
 }
 
-.repair-wagons-wrapper{
+.repair-wagons-wrapper {
   margin: 0 auto;
   max-width: 1126px;
 }
 
-.repair-details-wrapper{
+.repair-details-wrapper {
   margin: 0 auto;
   max-width: 1126px;
 }
 
 .repair-list {
-  margin:0;
+  margin: 0;
   margin-top: -15px;
 }
 
@@ -84,26 +84,22 @@ padding: 35px 80px 0 80px;
   padding-top: 15px;
 }
 
-.repair-card{
-
-  display:flex;
+.repair-card {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 65px;
   position: relative;
 
-
-  &-main{
+  &-main {
     margin-left: 60px;
-    width: 660px;
-
+    max-width: 660px;
   }
 
-  &-links{
+  &-links {
     font-family: Formular Medium;
     font-size: 16px;
 
-    .primary-rounded-button
-    {
+    .primary-rounded-button {
       width: 170px;
       height: 58px;
       margin-right: 35px;
@@ -118,10 +114,9 @@ padding: 35px 80px 0 80px;
     font-weight: normal;
 
     &.innovative {
-
-      &::after{
+      &::after {
         margin-left: 20px;
-        content:"Инновационный состав";
+        content: "Инновационный состав";
         display: inline-block;
         color: #fff;
         background-color: #333333;
@@ -134,7 +129,7 @@ padding: 35px 80px 0 80px;
         width: 185px;
         height: 18px;
         border-radius: 4px;
-        padding: 5px ;
+        padding: 5px;
         font-size: 14px;
         line-height: 17px;
 
@@ -143,7 +138,7 @@ padding: 35px 80px 0 80px;
     }
   }
 
-  p{
+  p {
     margin: 16px 0 50px 0;
   }
 
@@ -163,4 +158,3 @@ padding: 35px 80px 0 80px;
     font-weight: normal;
   }
 }
-
