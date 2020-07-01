@@ -6,7 +6,7 @@
 @import "../main-footer";
 @import "../fonts";
 
-.main-content{
+.main-content {
   width: 100%;
   padding-left: 80px;
 }
@@ -19,9 +19,11 @@
 }
 
 .activities-section {
-  padding-top: 25px;
-  max-width: 1126px;
-  margin: 0 auto;
+  padding: 25px 80px 0 80px;
+  .activities-wrapper {
+    max-width: 1126px;
+    margin: 0 auto;
+  }
   h1 {
     font-family: Formular Bold;
     font-size: 40px;
@@ -61,9 +63,13 @@
     flex-wrap: wrap;
     margin: 0 -40px -45px 0;
 
-    li {
+    .activities-item {
       margin-bottom: 45px;
       margin-right: 40px;
+      img{
+        height: auto;
+        width: 100%;
+      }
     }
 
     h2 {
