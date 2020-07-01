@@ -20,7 +20,7 @@ gulp.task('serve', function (done) {
 
     browserSync.init({
         server: 'dist',
-        notify: false,
+        notify: false
     });
 
     gulp.watch(["scss/*.scss", "scss/**/*.scss"], gulp.series('sass'));
@@ -30,6 +30,9 @@ gulp.task('serve', function (done) {
     });
     done();
 })
+
+
+
 
 gulp.task('default', gulp.series(['sass', 'serve']));
 

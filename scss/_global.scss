@@ -1,5 +1,4 @@
 @import "variables";
-
 body {
   margin: 0 auto;
   font-family: "Formular";
@@ -92,28 +91,26 @@ h1 {
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
-  border: 3px solid $text-blue;
-  & .rounded-button {
-  }
+  border: 2px solid $text-blue;
+  border-radius: 3px;
 
   &:focus{
     outline: none;
     border-color: black;
-    color: black;
   }
 }
 
 .primary-rounded-button
 {
   font-family: Formular Bold;
- background-image: url("../../img/primary-button-blue.svg");
+  background-image: url("../../img/primary-button-blue.svg");
   background-size: 100% 100%;
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
 
   color: #fff;
-  &.transparent{
+  &.transparent {
     background-image: url("../../img/primary-button-transparent.svg");
     color: $text-blue;
   }

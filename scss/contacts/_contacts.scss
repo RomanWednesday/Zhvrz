@@ -1,10 +1,17 @@
 .contacts-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1126px;
-  margin: 0 auto;
+  padding: 80px 80px;
+  .contacts-wrapper {
+    max-width: 1126px;
+    margin: 0 auto;
 
+    .blocks-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 24px;
+      min-height: 453px;
+    }
+  }
   span {
     margin-top: 0;
     font-family: Formular;
@@ -32,55 +39,75 @@
 }
 
 .block-contacts {
-  width: 483px;
+  max-width: 483px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 40px;
+  flex-wrap: wrap;
+  h2 {
+    margin-top: 0;
+  }
+  p {
+    margin-top: 0;
+  }
+  .contacts-map {
+    display: inline-flex;
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
 }
 
 //<----------contacts-list------------->
 
-.contacts-list {
+.contacts-list{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 auto;
+  margin-bottom: 40px;
   div {
-    width: 200px;
+    max-width: 200px;
   }
   h3 + p {
-    margin-top: 0;
+    margin: 0;
   }
 
-  .contact {
+  .contact{
     margin-top: 0;
     color: $text-blue;
     font-family: Formular;
     font-size: 23px;
     line-height: 32px;
   }
-  .contacts-map {
-    margin-top: 25px;
-  }
 }
 
 //<----------request-form------------->
 
 .block-request {
-  padding-top: 50px;
-  width: 483px;
+  max-width: 483px;
+  form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+  }
   input {
     display: block;
     width: 100%;
   }
   .primary-button {
     position: relative;
-    width: 482px;
+    max-width: 482px;
     height: 60px;
     padding: 0px 32px;
     text-align: left;
     position: relative;
 
-    &::after {
+    &::after{
       position: absolute;
-      right: 32px;
+      right:32px;
       top: 22px;
 
       content: " ";
@@ -91,9 +118,10 @@
       background-repeat: no-repeat;
       background-position: 95% 50%;
     }
+
   }
 
-  p {
+  p{
     margin: 0;
     margin-bottom: 40px;
   }

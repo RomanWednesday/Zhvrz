@@ -1,13 +1,18 @@
 @import "../variables";
 
 .main-footer {
-  padding: 40px 0;
-  margin: 80px auto 0 0;
   border-top: 1px solid $borderColor;
+  padding: 0 80px;
+
   .footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
     max-width: 1126px;
     margin: 0 auto;
+    padding: 40px 0;
+
   }
+
   p {
     display: inline-block;
     margin-top: 0;
@@ -16,5 +21,4 @@
   .copyrights {
     margin-right: 190px;
   }
-
 }
