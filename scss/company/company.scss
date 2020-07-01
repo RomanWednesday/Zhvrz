@@ -28,17 +28,17 @@
     position: absolute;
     right: 0;
     top: 412px;
-    .history-date{
+    .history-date {
         position: relative;
-        &:first-child{
+        &:first-child {
             margin-top: 0;
         }
         margin-top: 32px;
         font-weight: bold;
 
-        &.active{
+        &.active {
             color: rgba(#333333, 0.5);
-            &::after{
+            &::after {
                 position: relative;
                 display: inline-block;
                 content: "";
@@ -66,6 +66,9 @@
         padding: 0;
         margin-right: 32px;
         padding-bottom: 18px;
+        a {
+            padding-bottom: 18px;
+        }
         &.active-item {
             color: rgba(#333333, 0.5);
             border-bottom: 3px solid $text-blue;
