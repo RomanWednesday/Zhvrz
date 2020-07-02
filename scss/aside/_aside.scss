@@ -10,7 +10,7 @@
   left: 0;
 
   .aside-open-menu{
-    background-image: url("../img/menu-icon.svg");
+    background-image: url("../../img/menu-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     border-bottom: 1px solid $borderColor;
@@ -18,13 +18,13 @@
   }
   .aside-search {
     flex-grow: 1;
-    background-image: url("../img/search-icon.svg");
+    background-image: url("../../img/search-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 5%;
   }
   .aside-mail {
 
-    background-image: url("../img/mail-icon.svg");
+    background-image: url("../../img/mail-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
   }

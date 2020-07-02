@@ -56,8 +56,8 @@ h1 {
 
 .content-wrapper {
 
-  padding: 0 80px;
-  max-width: 1286px;
+  padding-left: 40px;
+  max-width: 1206px;
   margin: 0 auto;
 }
 
@@ -85,6 +85,12 @@ h1 {
   }
 }
 
+.section-wrapper {
+  margin: 0 auto;
+  max-width: 1126px;
+}
+
+
 .primary-button {
   font-family: Formular;
   color: $text-blue;
@@ -111,9 +117,15 @@ h1 {
 
   color: #fff;
   &.transparent {
-    background-image: url("../../img/primary-button-transparent.svg");
+    background-image: url("../../img/primary-button-white.svg");
     color: $text-blue;
   }
+
+  &.trans{
+    background-image: url("../../img/primary-button-transition.svg");
+  }
+
+
 }
 
 a.primary-rounded-button {
@@ -121,7 +133,6 @@ a.primary-rounded-button {
   justify-content: center;
   align-items: center;
 }
-
 
 a.primary-link {
   color: $text-blue;

@@ -1,0 +1,207 @@
+@import "../fonts";
+@import "../variables";
+@import "../global";
+@import "../aside/aside";
+@import "../main-header/main-header";
+@import "../main-footer/main-footer";
+@import "../contacts/contacts";
+@import "../page-summary/page-summary";
+
+.repairs-info {
+
+  padding-left: 80px;
+
+  .background-wrapper{
+    background-color: rgba(196, 196, 196, 0.1);
+  }
+
+  .page-summary {
+    background-image: url("../../img/wagon-broken.png");
+    &-main{
+      margin-bottom: 65px;
+    }
+  }
+
+  &-main__footer {
+
+    padding: 60px 0;
+    border-bottom: 1px solid $borderColor;
+    a{
+      color: $site-light-gray;
+    }
+    p {
+      margin: 0;
+      color: $site-light-gray;
+      font-family: Formular Medium;
+      font-size: 23px;
+      line-height: 32px;
+      max-width: 450px;
+      position: relative;
+
+      &::after {
+
+        position: absolute;
+        left: 380px;
+        top: 9px;
+        content: " ";
+        display: inline-block;
+        width: 53px;
+        height: 17px;
+        background-image: url("../../img/button-arrow-icon.svg");
+      }
+
+    }
+  }
+}
+
+.nav-tabs {
+  display: flex;
+  border-bottom: 1px solid $borderColor;
+  font-family: "Formular Bold";
+  font-size: 16px;
+
+  :first-child {
+    padding-left: 0;
+  }
+
+  .tab {
+    padding: 0;
+    margin-right: 32px;
+    padding-bottom: 18px;
+
+    &.active-item {
+      color: rgba(#333333, 0.5);
+      border-bottom: 3px solid $text-blue;
+    }
+  }
+}
+
+.wagons-types,
+.repairs-types{
+  padding-top: 60px;
+  h2 {
+    font-family: Formular Bold;
+    font-size: 32px;
+    line-height: 60px;
+    margin: 0;
+  }
+
+  &-services{
+    margin: 0;
+  }
+
+}
+
+.repairs-types{
+  padding-bottom: 55px;
+  border-bottom: 1px solid $borderColor;
+
+  &-list{
+    margin-bottom: 0;
+  }
+
+  &-services {
+    padding: 60px 0 0 56px;
+
+    li{
+      max-width: 805px;
+      line-height: 28px;
+      font-size: 16px;
+      color: rgba(33,33,33,0.7);
+      margin-bottom: 25px;
+      position: relative;
+      &::before{
+        position: absolute;
+        content: " ";
+        display: inline-block;
+        width: 24px;
+        height: 2px;
+        background-color: $text-blue;
+        top:  10px;
+        left: -56px;
+      }
+    }
+  }
+}
+
+.wagons-types {
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  .content-wrapper {
+    padding-bottom: 60px;
+  }
+
+  &-services {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      width: 300px;
+    }
+  }
+
+}
+
+
+.wagons-card {
+  margin-right: 70px;
+
+  &-image-container{
+    display: flex;
+    align-items: center;
+    min-height: 160px;
+  }
+
+  h3 {
+    font-size: 23px;
+    line-height: 32px;
+    margin: 0 0 15px;
+  }
+
+  p{
+    max-width: 250px;
+  }
+
+}
+
+.repairs-price-tape{
+  font-family: "Formular Medium";
+  height: 205px;
+  padding: 0 80px;
+  background-color: $text-blue;
+
+  color: #fff;
+
+  p{
+    margin: 0;
+    margin-bottom: 33px;
+    color: #fff;
+    font-size: 23px;
+    line-height: 32px;
+  }
+  .primary-rounded-button{
+    width: 238px;
+    height: 60px;
+    margin-right: 35px;
+  }
+
+  .dash{
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0 15px 6px;
+  }
+
+  .content-wrapper{
+    padding: 40px;
+    background-image: url("../../img/repair-contract.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+}
+
+
