@@ -112,22 +112,4 @@
     }
   }
 }
-
-@media (max-width: 375px) {
-
-  .main-header
-  {
-    padding: 14px 25px 9px;
-    min-height: 55px;
-  }
-
-  .navigation-list,
-  .header-contacts {
-    display: none;
-  }
-
-  .main-logo {
-    width: 191px;
-    height: 28px;
-  }
-}
+@import './main-header-adaptive';
