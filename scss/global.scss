@@ -22,7 +22,10 @@ button {
 
 a {
   text-decoration: none;
-  color: #333333;
+  color: $site-light-gray;
+  &:hover {
+    color: $text-blue;
+  }
 }
 
 p {
@@ -58,11 +61,21 @@ h1 {
 h2 {
   font-family: Formular Bold;
   font-size: 32px;
+  line-height: 39px;
 }
 h3 {
-  font-family: Formular;
+  font-family: Formular Medium;
   font-size: 23px;
+  line-height: 28px;
 }
+
+.text {
+  font-family: Formular;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
+
 .content-wrapper {
   padding: 0 80px;
   max-width: 1286px;

@@ -21,7 +21,7 @@
         h3 {
             margin-top: 40px;
         }
-        .top-managers-header{
+        .top-managers-header {
             margin-top: 60px;
             margin-bottom: 20px;
         }
@@ -96,6 +96,58 @@
         }
         p {
             margin-top: 0;
+        }
+    }
+}
+
+.top-managers-list {
+    display: flex;
+    flex-wrap: wrap;
+    .top-manager-item {
+        max-width: 246px;
+        margin-right: 40px;
+    }
+}
+
+.navigation-block {
+    padding: 60px 80px;
+    width: 100%;
+    border-top: 1px solid $borderColor;
+    border-bottom: 1px solid $borderColor;
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1126px;
+        .link-back {
+            position: relative;
+            margin-left: 52px;
+            &::before {
+                position: relative;
+                display: inline-block;
+                content: "";
+                width: 50px;
+                height: 11px;
+                background: url("../../img/arrow-left.svg");
+                background-repeat: no-repeat;
+                background-position: 95% 50%;
+                right: 48px;
+            }
+        }
+        .link-forward{
+            position: relative;
+            margin-right: 52px;
+            &:after {
+                position: relative;
+                display: inline-block;
+                content: "";
+                width: 50px;
+                height: 11px;
+                background: url("../../img/arrow-right.svg");
+                background-repeat: no-repeat;
+                background-position: 95% 50%;
+                left: 48px;
+            }
         }
     }
 }
