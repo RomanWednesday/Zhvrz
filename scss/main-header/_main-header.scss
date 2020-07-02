@@ -87,3 +87,29 @@
   //align-items: center;
   align-self: stretch;
 }
+
+
+
+.main-header.white-header {
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+  .navigation-item.active-item{
+    a{
+      opacity: 0.5;
+      border-bottom: none;
+    }
+  }
+
+  a,
+  .phone-number,
+  .callback{
+    color: #fff;
+  }
+
+  .phone-number{
+    &::before {
+      background-image: none;
+    }
+  }
+}

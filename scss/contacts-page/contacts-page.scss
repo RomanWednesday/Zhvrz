@@ -1,0 +1,63 @@
+@import "../fonts";
+@import "../variables";
+@import "../global";
+@import "../aside/aside";
+@import "../main-header/main-header";
+
+
+
+
+.contacts-page {
+  height: 100vh;
+  background-image: url("../../img/zhvz-map-big.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .header-wrapper {
+    margin-left: 80px;
+  }
+}
+
+.contacts-main-block {
+
+  h1, p{
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .contact {
+    color: $text-blue;
+    font-family: Formular;
+    font-size: 23px;
+    line-height: 32px;
+  }
+
+  .primary-rounded-button{
+    height: 58px;
+    width: 250px;
+    margin-top: 20px;
+
+    &.transparent{
+      width: 240px;
+    }
+  }
+
+  position: absolute;
+  width: 373px;
+  height: 545px;
+  left: 160px;
+  top: 150px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  background: #FFFFFF;
+  border-radius: 5px;
+
+  padding: 25px 50px
+}
+
+.contacts-buttons-block {
+  margin-top: 10px;
+}

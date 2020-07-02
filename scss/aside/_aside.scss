@@ -39,3 +39,21 @@
 .aside-icon {
   height: 80px;
 }
+
+
+.aside-menu.white-aside{
+
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+
+  .aside-open-menu{
+    background-image: url("../../img/menu-icon-white.svg");
+  }
+  .aside-search {
+    background-image: url("../../img/search-icon-white.svg");
+  }
+
+  .aside-mail {
+    background-image: url("../../img/mail-icon-white.svg");
+  }
+
+}
