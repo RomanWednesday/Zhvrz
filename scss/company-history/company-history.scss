@@ -70,7 +70,9 @@
             padding-bottom: 18px;
         }
         &.active-item {
-            color: rgba(#333333, 0.5);
+            a {
+                color: rgba(#333333, 0.5);
+            }
             border-bottom: 3px solid $text-blue;
         }
     }
