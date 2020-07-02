@@ -8,7 +8,10 @@
 
 
 .contacts-page {
-  height: 100vh;
+  &-content {
+    padding: 70px 80px;
+    margin-left: 80px
+  }
   background-image: url("../../img/zhvz-map-big.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,7 +48,6 @@
     }
   }
 
-  position: absolute;
   width: 373px;
   height: 545px;
   left: 160px;
