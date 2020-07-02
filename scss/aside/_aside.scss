@@ -3,32 +3,32 @@
 .aside-menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 80px;
   border-right: 1px solid $borderColor;
   position: fixed;
   left: 0;
+  height: 100vh;
 
   .aside-open-menu{
     background-image: url("../../img/menu-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     border-bottom: 1px solid $borderColor;
-    height: 80px;
   }
+
   .aside-search {
     flex-grow: 1;
     background-image: url("../../img/search-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 5%;
   }
+
   .aside-mail {
 
     background-image: url("../../img/mail-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
-  height: 100vh;
 
   button {
     cursor: pointer;
@@ -38,6 +38,7 @@
 
 .aside-icon {
   height: 80px;
+  width: 80px;
 }
 
 
@@ -54,6 +55,29 @@
 
   .aside-mail {
     background-image: url("../../img/mail-icon-white.svg");
+  }
+
+}
+
+
+@media (max-width: 375px) {
+  .aside-search {
+    display: none;
+  }
+  .aside-icon {
+    width: 20px;
+    height: 16px;
+  }
+  .aside-menu {
+    position: absolute;
+    height: 56px;
+    flex-direction: row-reverse;
+    left: auto;
+    right: 0;
+  }
+  .aside-open-menu{
+    border-left: 1px solid $borderColor;
+    border-bottom: none;
   }
 
 }

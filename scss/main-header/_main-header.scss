@@ -2,8 +2,9 @@
 
 .main-header {
   border-bottom: 1px solid $borderColor;
-  height: 80px;
+  min-height: 80px;
   padding: 0 80px;
+
   .callback {
     font-family: "Formular Bold";
     font-size: 13px;
@@ -51,9 +52,7 @@
 .main-navigation{
   display: flex;
   justify-content: space-between;
-  min-height: 80px;
   align-items: center;
-
 
 }
 
@@ -112,4 +111,19 @@
       background-image: none;
     }
   }
+}
+
+@media (max-width: 375px) {
+
+  .main-header
+  {
+    padding: 0 25px;
+    min-height: 55px;
+  }
+
+  .navigation-list,
+  .header-contacts {
+    display: none;
+  }
+
 }

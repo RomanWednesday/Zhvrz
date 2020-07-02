@@ -86,3 +86,15 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+
+  .main-content {
+    padding: 0;
+  }
+
+
+  .activities-section{
+    padding:25px 25px 30px;
+  }
+}
