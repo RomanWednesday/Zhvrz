@@ -139,5 +139,12 @@ a.primary-link {
 }
 
 
-
+@media (max-width: 375px) {
+  input,
+  input::placeholder {
+    font-size: 20px;
+    padding-bottom: 16px;
+    padding-top: 0;
+  }
+}
 
