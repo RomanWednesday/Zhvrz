@@ -1,16 +1,46 @@
-@media (max-width: 375px) {
-    .main-header {
-        padding: 14px 25px 9px;
-        min-height: 55px;
-    }
 
-    .navigation-list,
-    .header-contacts {
-        display: none;
-    }
-
+@media (max-width: 754px)
+{
     .main-logo {
         width: 191px;
         height: 28px;
     }
+    .mobile-aside-menu {
+        .aside-icon{
+            width: 56px;
+            height: 56px;
+        }
+        button{
+            padding: 0;
+        }
+    }
+    .main-header{
+        min-height: 55px;
+    }
+}
+
+@media (max-width: 1209px)
+{
+    .navigation-list {
+        display: none;
+    }
+    .header-contacts {
+        display: none;
+    }
+    .main-header{
+        padding: 0;
+        padding-left: 25px;
+        .header-wrapper{
+            margin: 0;
+            justify-content: space-between;
+        }
+    }
+    .mobile-aside-menu{
+        display: flex;
+    }
+}
+
+@media (max-width: 375px) {
+
+
 }

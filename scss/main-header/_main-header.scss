@@ -10,6 +10,7 @@
     font-size: 13px;
     text-transform: uppercase;
     color: $text-blue;
+    white-space: nowrap;
   }
 
   .header-wrapper {
@@ -22,9 +23,10 @@
 
   .phone-number {
     margin: 0;
-
+    margin-right: 12px;
     font-size: 13px;
     line-height: 16px;
+    white-space: nowrap;
 
     &::before{
       vertical-align: middle;
@@ -42,8 +44,7 @@
 
 .header-contacts {
   display: flex;
-  width: 315px;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 
@@ -112,4 +113,22 @@
     }
   }
 }
+
+
+.mobile-aside-menu {
+
+  @include menu-icons;
+
+  display: none;
+  //height: 56px;
+
+  .aside-open-menu,
+  .aside-mail {
+    border-right: 1px solid $borderColor;
+    border-bottom: none;
+  }
+
+}
+
+
 @import './main-header-adaptive';

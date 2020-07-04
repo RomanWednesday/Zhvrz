@@ -135,8 +135,7 @@
   .contacts {
 
     &-section {
-      padding: 40px 24px;
-      padding-top: 60px; //contacts-section игнорит блок сверху
+      padding: 40px 0 40px 24px;
 
       p {
         margin-bottom: 26px;
@@ -151,9 +150,7 @@
         font-size: 20px;
       }
     }
-
 }
-
   .block-contacts {
     margin-bottom: 20px;
     margin-right: 0;
@@ -179,6 +176,9 @@
       }
   }
 
+  .block-request{
+    padding-right: 10px;
+  }
   .request-input-group {
     padding-top: 8px;
     margin-bottom: 13px;
