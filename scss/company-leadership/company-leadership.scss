@@ -23,7 +23,7 @@
         }
         .top-managers-header {
             margin-top: 60px;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
     }
 }
@@ -103,14 +103,31 @@
 .top-managers-list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -60px;
+    margin-bottom: -20px;
     .top-manager-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         max-width: 246px;
         margin-right: 40px;
+        margin-bottom: 20px;
+        img {
+            max-width: 150px;
+        }
+        p{
+            margin-top: 8px;
+        }
+        p.text {
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
     }
 }
 
 .navigation-block {
     padding: 60px 80px;
+    margin-top: 80px;
     width: 100%;
     border-top: 1px solid $borderColor;
     border-bottom: 1px solid $borderColor;
@@ -134,7 +151,7 @@
                 right: 48px;
             }
         }
-        .link-forward{
+        .link-forward {
             position: relative;
             margin-right: 52px;
             &:after {
