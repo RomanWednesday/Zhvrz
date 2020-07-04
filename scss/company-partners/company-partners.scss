@@ -1,0 +1,105 @@
+@import "../variables";
+@import "../global";
+@import "../main-header";
+@import "../aside";
+@import "../contacts";
+@import "../main-footer";
+@import "../fonts";
+@import "../navigation_block";
+@import "../company-navigation-list";
+
+.partners {
+    padding: 25px 80px 0 80px;
+    &-wrapper {
+        max-width: 1126px;
+        margin: 0 auto;
+        h1 {
+            margin-bottom: 16px;
+            margin-top: 18px;
+        }
+        h2 {
+            margin-top: 48px;
+        }
+        h3 {
+            margin-top: 40px;
+        }
+        .partners-header {
+            margin-top: 48px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.partner-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .left-side {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-right: 1px solid $borderColor;
+        .partner-item {
+            display: flex;
+            min-height: 245px;
+            justify-content: center;
+            width: 370px;
+            border-bottom: 1px solid $borderColor;
+            &:last-child {
+                border-bottom: none;
+            }
+            img {
+                display: block;
+                align-self: center;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-right: 1px solid $borderColor;
+        .partner-item {
+            display: flex;
+            min-height: 245px;
+            justify-content: center;
+            width: 370px;
+            border-bottom: 1px solid $borderColor;
+            &:last-child {
+                border-bottom: none;
+            }
+            img {
+                display: block;
+                align-self: center;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .partner-item {
+            display: flex;
+            min-height: 245px;
+            justify-content: center;
+            width: 370px;
+            border-bottom: 1px solid $borderColor;
+            &:last-child {
+                border-bottom: none;
+            }
+            img {
+                display: block;
+                align-self: center;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.navigation-block {
+    margin-top: 100px;
+}
