@@ -1,0 +1,90 @@
+@import "../variables";
+@import "../global";
+@import "../main-header";
+@import "../aside";
+@import "../contacts";
+@import "../main-footer";
+@import "../fonts";
+@import "../navigation_block";
+@import "../company-navigation-list";
+
+.licenses {
+    padding: 25px 80px 0 80px;
+    &-wrapper {
+        max-width: 1126px;
+        margin: 0 auto;
+        h1 {
+            margin-bottom: 16px;
+            margin-top: 18px;
+        }
+        h2 {
+            margin-top: 48px;
+        }
+        h3 {
+            margin-top: 40px;
+        }
+        .license-header {
+            margin-top: 48px;
+            margin-bottom: 40px;
+        }
+        .certificate-header {
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.document-list {
+    display: flex;
+    flex-direction: column;
+    .document-item {
+        width: 100%;
+        display: flex;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid $borderColor;
+        .file-img {
+            margin-right: 32px;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p {
+                margin: 0;
+            }
+            .text {
+                margin-bottom: 8px;
+                font-weight: 700;
+                max-width: 838px;
+            }
+        }
+
+        button {
+            align-self: center;
+            margin-left: auto;
+            height: 58px;
+            width: 112px;
+            border: 2px solid $text-blue;
+            &:active {
+                background-color: $text-blue;
+                color: #ffffff;
+            }
+            &:hover {
+                background-color: #2525e8;
+                color: #ffffff;
+            }
+        }
+
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.navigation-block{
+    margin-top: 100px;
+}
