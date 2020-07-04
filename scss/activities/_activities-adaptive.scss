@@ -33,16 +33,21 @@
 }
 
 @media (max-width: 754px){
+
+  .breadcrumbs {
+    margin-bottom: 7px;
+  }
+
+
   .activities-section{
 
     padding: 16px 25px 0;
 
     .activities-list {
-      //margin: 0;
+
 
       .activities-item {
 
-        margin-left: 0;
         margin-bottom: 10px;
 
         h2 {
@@ -65,49 +70,9 @@
     }
 
   }
-
 }
-@media (max-width: 375px) {
 
-  .breadcrumbs {
-    margin-bottom: 7px;
-  }
 
-  .activities-section {
-
-    padding: 16px 25px 0;
-
-    .activities-list {
-      margin: 0;
-
-      //  .activities-item {
-      //
-      //    margin-left: 0;
-      //    margin-bottom: 10px;
-      //
-      //    h2 {
-      //      margin-top: 14px;
-      //      font-size: 20px;
-      //      line-height: 24px;
-      //    }
-      //  }
-      //}
-      //
-      //h1 {
-      //  font-size: 30px;
-      //  line-height: 37px;
-      //  margin-top: 0;
-      //  margin-bottom: 25px;
-      //}
-      //
-      //img {
-      //  width: 327px;
-      //}
-
-    }
-
-  }
-}
 
 
 
