@@ -1,0 +1,123 @@
+@import "../variables";
+@import "../global";
+@import "../main-header/main-header";
+@import "../aside/aside";
+@import "../fonts";
+
+.contacts-content {
+    padding: 25px 80px 0 80px;
+    &-wrapper {
+        max-width: 1126px;
+        margin: 0 auto;
+        h1 {
+            margin-bottom: 16px;
+            margin-top: 18px;
+        }
+        h2 {
+            margin-top: 48px;
+        }
+        h3 {
+            margin-top: 40px;
+        }
+        .partners-header {
+            margin-top: 48px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.contacts {
+    background: url("../../img/contacts-big-map.png") no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.main-content {
+    height: 100vh;
+}
+
+.main-header {
+    border-bottom: 1px solid rgba(white, 0.05);
+    .callback {
+        font-family: "Formular Bold";
+        font-size: 13px;
+        text-transform: uppercase;
+        color: white;
+    }
+    .phone-number {
+        color: white;
+        &::before {
+            display: none;
+        }
+    }
+
+    .main-navigation {
+        .navigation-item {
+            a {
+                color: white;
+            }
+        }
+        .navigation-item.active-item {
+            a {
+                border-bottom: none;
+                color: rgba(white, 0.5);
+            }
+        }
+    }
+}
+
+.aside-menu {
+    border-right: 1px solid rgba(white, 0.05);
+    .aside-open-menu {
+        background-image: url("../../img/menu-icon.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        border-bottom: 1px solid rgba(white, 0.05);
+        height: 80px;
+    }
+    .aside-search {
+        flex-grow: 1;
+        background-image: url("../../img/search-icon.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 5%;
+    }
+    .aside-mail {
+        background-image: url("../../img/mail-icon.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    height: 100vh;
+
+    button {
+        cursor: pointer;
+    }
+}
+
+.aside-icon {
+    height: 80px;
+}
+
+.contacts-block {
+    max-width: 373px;
+    padding: 48px;
+    padding-top: 26px;
+    margin-top: 68px;
+    background-color: white;
+    border-radius: 5px;
+    h1 {
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+    p {
+        margin-top: 0;
+        &.text {
+            font-weight: 700;
+            color: #5a5a5a;
+            margin-bottom: 12px;
+        }
+    }
+    h3 {
+        margin: 0;
+        color: #0101bf;
+    }
+}
