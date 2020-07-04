@@ -4,7 +4,7 @@
 @import "../aside/aside";
 @import "../main-header/main-header";
 @import "../main-footer/main-footer";
-@import "../contacts/contacts";
+@import "../contacts";
 
 
 
@@ -20,8 +20,8 @@
 .page-summary {
   max-width: 1206px;
   margin: 0 auto;
-  background-image: url("../../img/repairs-broken.png");
-  padding-bottom: 65px;
+  background-image: url("../../img/repairs-main.png");
+  padding-bottom: 85px;
   padding-top: 25px;
 
   background-size: contain;
@@ -56,12 +56,12 @@
 
 .repair-wagons-brochure,
 .repair-details-brochure {
-  padding: 35px 80px 0 80px;
+  padding: 0 80px 0 80px;
   h2 {
     font-family: Formular Bold;
     font-size: 32px;
     line-height: 60px;
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 

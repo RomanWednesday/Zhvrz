@@ -21,12 +21,16 @@ button {
 
 a {
   text-decoration: none;
+  color: $site-light-gray;
+  &:hover {
+    color: $text-blue;
+  }
 }
 
 p {
   line-height: 28px;
   font-size: 16px;
-  color: rgba(33, 33, 33, 0.5);
+  color: rgba(33, 33, 33, 0.7);
 }
 
 label {
@@ -53,23 +57,33 @@ h1 {
   font-size: 40px;
   line-height: 60px;
 }
-
 h2 {
   font-family: Formular Bold;
   font-size: 32px;
   line-height: 39px;
 }
-
 h3 {
-  font-family: Formular;
+  font-family: Formular Medium;
   font-size: 23px;
   line-height: 28px;
+}
+
+.text {
+  font-family: Formular;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
 }
 
 .content-wrapper {
   padding-left: 40px;
   max-width: 1206px;
   margin: 0 auto;
+}
+
+.main-content {
+  width: 100%;
+  padding-left: 80px;
 }
 
 .breadcrumbs {
