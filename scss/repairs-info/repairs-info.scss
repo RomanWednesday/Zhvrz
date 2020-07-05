@@ -1,55 +1,24 @@
+@import "../global";
 @import "../fonts";
 @import "../variables";
-@import "../global";
 @import "../aside/aside";
+@import "../page-summary/page-summary";
 @import "../main-header/main-header";
 @import "../main-footer/main-footer";
-@import "../contacts/contacts";
-@import "../page-summary/page-summary";
+@import "../contacts";
 
 .repairs-info {
-
   padding-left: 80px;
 
-  .background-wrapper{
+  .background-wrapper {
     background-color: rgba(196, 196, 196, 0.1);
   }
 
   .page-summary {
     background-image: url("../../img/wagon-broken.png");
-    &-main{
+    background-position: center;
+    &-main {
       margin-bottom: 65px;
-    }
-  }
-
-  &-main__footer {
-
-    padding: 60px 0;
-    border-bottom: 1px solid $borderColor;
-    a{
-      color: $site-light-gray;
-    }
-    p {
-      margin: 0;
-      color: $site-light-gray;
-      font-family: Formular Medium;
-      font-size: 23px;
-      line-height: 32px;
-      max-width: 450px;
-      position: relative;
-
-      &::after {
-
-        position: absolute;
-        left: 380px;
-        top: 9px;
-        content: " ";
-        display: inline-block;
-        width: 53px;
-        height: 17px;
-        background-image: url("../../img/button-arrow-icon.svg");
-      }
-
     }
   }
 }
@@ -77,7 +46,7 @@
 }
 
 .wagons-types,
-.repairs-types{
+.repairs-types {
   padding-top: 60px;
   h2 {
     font-family: Formular Bold;
@@ -86,38 +55,37 @@
     margin: 0;
   }
 
-  &-services{
+  &-services {
     margin: 0;
   }
-
 }
 
-.repairs-types{
+.repairs-types {
   padding-bottom: 55px;
   border-bottom: 1px solid $borderColor;
 
-  &-list{
+  &-list {
     margin-bottom: 0;
   }
 
   &-services {
     padding: 60px 0 0 56px;
 
-    li{
+    li {
       max-width: 805px;
       line-height: 28px;
       font-size: 16px;
-      color: rgba(33,33,33,0.7);
+      color: rgba(33, 33, 33, 0.7);
       margin-bottom: 25px;
       position: relative;
-      &::before{
+      &::before {
         position: absolute;
         content: " ";
         display: inline-block;
         width: 24px;
         height: 2px;
         background-color: $text-blue;
-        top:  10px;
+        top: 10px;
         left: -56px;
       }
     }
@@ -141,14 +109,12 @@
       width: 300px;
     }
   }
-
 }
-
 
 .wagons-card {
   margin-right: 70px;
 
-  &-image-container{
+  &-image-container {
     display: flex;
     align-items: center;
     min-height: 160px;
@@ -160,34 +126,38 @@
     margin: 0 0 15px;
   }
 
-  p{
+  p {
     max-width: 250px;
   }
-
 }
 
-.repairs-price-tape{
+.repairs-price-tape {
   font-family: "Formular Medium";
-  height: 205px;
   padding: 0 80px;
-  background-color: $text-blue;
+  background-color: #0101bf;
+  background-image: url("../../img/repair-contract.png");
+  background-repeat: no-repeat;
+  background-position: right;
 
   color: #fff;
 
-  p{
+  p {
     margin: 0;
     margin-bottom: 33px;
-    color: #fff;
+    color: white;
     font-size: 23px;
     line-height: 32px;
   }
-  .primary-rounded-button{
+  a {
+    color: white;
+  }
+  .primary-rounded-button {
     width: 238px;
     height: 60px;
     margin-right: 35px;
   }
 
-  .dash{
+  .dash {
     display: inline-block;
     width: 24px;
     height: 2px;
@@ -195,13 +165,33 @@
     margin: 0 15px 6px;
   }
 
-  .content-wrapper{
-    padding: 40px;
-    background-image: url("../../img/repair-contract.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
+  .content-wrapper {
+    max-width: 1126px;
+    padding: 37px 0px;
   }
 }
 
-
+.navigation-block {
+  padding: 60px 80px;
+  width: 100%;
+  border-top: 1px solid $borderColor;
+  border-bottom: 1px solid $borderColor;
+  &-wrapper {
+    margin: 0 auto;
+    max-width: 1126px;
+    h3 {
+      position: relative;
+      &:after {
+        position: relative;
+        display: inline-block;
+        content: "";
+        width: 50px;
+        height: 11px;
+        background: url("../../img/arrow-right.svg");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+        left: 48px;
+      }
+    }
+  }
+}
