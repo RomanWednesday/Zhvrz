@@ -2,13 +2,15 @@
 
 .main-header {
   border-bottom: 1px solid $borderColor;
+  padding: 0px 80px;
   height: 80px;
-  padding: 0 80px;
+
   .callback {
     font-family: "Formular Bold";
     font-size: 13px;
     text-transform: uppercase;
     color: $text-blue;
+    white-space: nowrap;
   }
 
   .header-wrapper {
@@ -21,8 +23,10 @@
 
   .phone-number {
     margin: 0;
+    margin-right: 12px;
     font-size: 13px;
     line-height: 16px;
+    white-space: nowrap;
 
     &::before{
       vertical-align: middle;
@@ -47,13 +51,13 @@
 
 //<----------navigation------------->
 
-.main-navigation {
+.main-navigation{
   display: flex;
   justify-content: space-between;
   height: 80px;
   align-items: center;
   .navigation-item {
-    padding: 32px 20px 0 20px;
+    padding: 0 20px;
     a {
       padding: 32px 0 29px 0;
       color: #333333;
@@ -67,6 +71,7 @@
       border-bottom: 3px solid $text-blue;
       color: rgba(33, 33, 33, 0.5);
     }
+
   }
 }
 
@@ -82,14 +87,43 @@
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
   align-self: stretch;
 }
+
+
+
+.main-header.white-header {
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+  .navigation-item.active-item{
+    a{
+      opacity: 0.5;
+      border-bottom: none;
+    }
+  }
+
+  a,
+  .phone-number,
+  .callback{
+    color: #fff;
+  }
+
+  .phone-number{
+    &::before {
+      background-image: none;
+    }
+  }
+}
+
 
 .mobile-aside-menu {
 
   @extend %menu-icons;
 
   display: none;
+  //height: 56px;
 
   .aside-open-menu,
   .aside-mail {
@@ -100,3 +134,5 @@
 }
 
 @import "./main-header-adaptive";
+
+@import './main-header-adaptive';
