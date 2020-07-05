@@ -8,6 +8,9 @@
   position: fixed;
   left: 0;
   height: 100vh;
+  .aside-open-menu{
+    border-bottom: 1px solid $borderColor;
+  }
 
   @extend %menu-icons;
 

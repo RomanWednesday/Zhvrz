@@ -4,7 +4,7 @@
 @import "../aside/aside";
 @import "../main-header/main-header";
 @import "../main-footer/main-footer";
-@import "../contacts/contacts";
+@import "../contacts";
 @import "../page-summary/page-summary";
 
 
@@ -82,6 +82,7 @@
   &-main{
     margin-left: 60px;
     width: 660px;
+
   }
 
   &-links{
@@ -102,6 +103,7 @@
     font-family: Formular Medium;
     font-size: 23px;
     line-height: 25px;
+    font-weight: normal;
 
     &.innovative {
 
@@ -291,4 +293,3 @@
 }
 
 @import "repairs-adaptive";
-@import "../page-summary/page-summary-adaptive";

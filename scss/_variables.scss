@@ -1,13 +1,12 @@
 $text-blue: #0101BF;
 $site-light-gray: #333333;
-$borderColor: rgba(33, 33, 33, 0.05);
+$borderColor: rgba(33, 33, 33, 0.1);
 
 %menu-icons {
   .aside-open-menu {
     background-image: url("../../img/menu-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
-    border-bottom: 1px solid $borderColor;
   }
 
   .aside-search {

@@ -2,14 +2,9 @@
 @import "../global";
 @import "../main-header/main-header";
 @import "../aside/aside";
-@import "../contacts/contacts";
+@import "../contacts";
 @import "../main-footer/main-footer";
 @import "../fonts";
-
-.main-content {
-  width: 100%;
-  padding-left: 80px;
-}
 
 //<----------activities------------->
 
@@ -28,31 +23,57 @@
 
   h1 {
     margin-top: 18px;
-    margin-bottom: 32px;
+    margin-bottom: 33px;
+  }
+
+  .breadcrumbs {
+    display: flex;
+    font-size: 14px;
+    line-height: 28px;
+    opacity: 0.7;
+    margin-top: 0;
+
+    & li:not(:first-child)::before {
+      content: " ";
+      display: inline-block;
+      vertical-align: middle;
+      width: 8px;
+      height: 1px;
+      margin: 0 16px;
+    }
+    & li:last-child {
+      opacity: 0.5;
+    }
+
+    h1 {
+      margin-top: 18px;
+      margin-bottom: 32px;
+    }
   }
 
   .activities-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0 0 -40px;
 
     .activities-item {
       margin-bottom: 45px;
-      margin-left: 40px;
+      margin-right: 40px;
+
+      a:hover + h3 a {
+        color: $text-blue;
+      }
+
+      img {
+        height: auto;
+        width: 100%;
+      }
     }
 
-    h2 {
-      margin-top: 25px;
-      font-size: 23px;
-      line-height: 28px;
-    }
-    a {
-      color: #333333;
-
+    .activities-link {
       &:hover {
         color: $text-blue;
       }
     }
   }
 }
-@import './activities-adaptive';
+@import "./activities-adaptive";

@@ -1,4 +1,5 @@
 @import "variables";
+
 body {
   margin: 0 auto;
   font-family: "Formular";
@@ -21,13 +22,17 @@ button {
 
 a {
   text-decoration: none;
+  color: $site-light-gray;
+  &:hover {
+    color: $text-blue;
+  }
   white-space: nowrap;
 }
 
 p {
   line-height: 28px;
   font-size: 16px;
-  color: rgba(33, 33, 33, 0.5);
+  color: rgba(33, 33, 33, 0.7);
 }
 
 label {
@@ -73,12 +78,18 @@ h3 {
   margin: 0 auto;
 }
 
+.main-content {
+  width: 100%;
+  padding-left: 80px;
+}
+
 .breadcrumbs {
   display: flex;
   font-size: 14px;
   line-height: 28px;
   opacity: 0.7;
   margin-top: 0;
+  flex-wrap: wrap;
   a {
     color: #333333;
   }
@@ -167,8 +178,9 @@ a.primary-link {
   }
 
   h3 {
-    font-family: Formular;
+    font-family: Formular Medium;
     font-size: 20px;
     line-height: 24px;
+    font-weight: 600;
   }
 }

@@ -1,16 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Document</title>
-    <link   rel="stylesheet" href="css/contacts-page/contacts-page.css">
+    <link rel="stylesheet" href="css/contacts/contacts.css">
 </head>
+
 <body>
-    <div class="contacts-page">
-        <aside class="aside-menu white-aside">
+    <div class="contacts">
+        <!-- Боковое меню -->
+        <aside class="aside-menu">
             <button type="button" class="aside-open-menu">
                 <div class="aside-icon menu-icon">
                 </div>
@@ -26,14 +28,16 @@
                 </div>
             </button>
         </aside>
-            <header class="main-header white-header">
+        <div class="main-content">
+            <!-- Шапка -->
+            <header class="main-header">
                 <div class="header-wrapper">
                     <nav class="main-navigation">
-                        <a href="#"><img src="img/main-logo-white.svg" width="224" height="33"
-                                         alt="Железногорский вагоноремонтный завод"></a>
+                        <a href="#"><img src="img/logo-contacts.svg" width="224" height="33"
+                                alt="Железногорский вагоноремонтный завод"></a>
                         <ul class="navigation-list">
-                            <li class="navigation-item"><a href="#">Направления</a></li>
-                            <li class="navigation-item"><a href="#">Предприятие</a></li>
+                            <li class="navigation-item"><a href="activities.html">Направления</a></li>
+                            <li class="navigation-item"><a href="company-history.html">Предприятие</a></li>
                             <li class="navigation-item active-item"><a href="#">Контакты</a></li>
                         </ul>
                     </nav>
@@ -43,29 +47,22 @@
                     </div>
                 </div>
             </header>
-            <section class = "contacts-page-content">
-                <div class="contacts-main-block">
-                    <h1> Контакты</h1>
-                    <p>307170, Железногорск, Курская область, Промплощадка-2</p>
-                    <div class="contacts-phone">
-                        <h3>Телефон</h3>
-                        <p> <span class="contact">8 800 300 30 30</span>
-                            <br> Пн - Пт, 9:00 - 19:00</p>
-                    </div>
-                    <div class="contacts-email">
-                        <h3>E-mail</h3>
-                        <p> <span class="contact">hello@zhvrz.ru</span></p>
-                    </div>
-                    <div class="contacts-buttons-block">
-                        <button class = "primary-rounded-button get-route-button">
-                            Проложить маршрут
-                        </button>
-                        <button class = "primary-rounded-button transparent download-details-button">
-                            Скачать реквизиты
-                        </button>
+            <!-- Контент -->
+            <section class="contacts-content">
+                <div class="contacts-content-wrapper">
+                    <div class="contacts-block">
+                        <h1>Контакты</h1>
+                        <p>307170, Железногорск, Курская область, Промплощадка-2</p>
+                        <p class="text">Телефон</p>
+                        <h3>8 800 300 30 30</h3>
+                        <p>Пн-Пт, 9:00 - 19:00</p>
+                        <p class="text">E-mail</p>
+                        <h3>hello@zhvrz.ru</h3>
                     </div>
                 </div>
             </section>
+        </div>
     </div>
 </body>
+
 </html>
