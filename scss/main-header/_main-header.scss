@@ -117,10 +117,9 @@
 
 .mobile-aside-menu {
 
-  @include menu-icons;
+  @extend %menu-icons;
 
   display: none;
-  //height: 56px;
 
   .aside-open-menu,
   .aside-mail {

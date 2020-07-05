@@ -21,6 +21,7 @@ button {
 
 a {
   text-decoration: none;
+  white-space: nowrap;
 }
 
 p {
@@ -82,7 +83,7 @@ h3 {
     color: #333333;
   }
 
-  & li:not(:first-child)::before {
+   li:not(:first-child)::before {
     content: " ";
     display: inline-block;
     vertical-align: middle;
@@ -91,7 +92,7 @@ h3 {
     background-color: #333333;
     margin: 0 16px;
   }
-  & li:last-child {
+   li:last-child {
     opacity: 0.5;
   }
 }

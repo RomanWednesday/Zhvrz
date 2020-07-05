@@ -5,48 +5,20 @@
 @import "../main-header/main-header";
 @import "../main-footer/main-footer";
 @import "../contacts/contacts";
+@import "../page-summary/page-summary";
+
 
 
 
 .repairs {
   padding-left: 80px;
+
   .background-wrapper {
     background-color: rgba(196, 196, 196, 0.1);
     padding-left: 80px;
-    height: 453px;
   }
-}
-
-.page-summary {
-  max-width: 1206px;
-  margin: 0 auto;
-  background-image: url("../../img/repairs-broken.png");
-  padding-bottom: 65px;
-  padding-top: 25px;
-
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-
-  h1 {
-    margin-top: 18px;
-    margin-bottom: 15px;
-  }
-
-  &-main {
-    max-width: 610px;
-    margin-bottom: 125px;
-  }
-
-  &-links {
-    font-family: Formular Medium;
-    font-size: 16px;
-  }
-
-  &-button {
-    width: 212px;
-    height: 58px;
-    margin-right: 38px;
+  .summary-image-container{
+    background-image: url("../../img/repairs-broken.png");
   }
 }
 
@@ -62,6 +34,21 @@
     font-size: 32px;
     line-height: 60px;
     margin-bottom: 0;
+  }
+}
+.repair-wagons-brochure {
+
+  li {
+    @include set-card-image((1: '18-100.png', 2:'barber.png', 3:'18-194.png'));
+  }
+
+}
+
+.repair-details-brochure {
+
+  padding-top: 65px;
+  li {
+    @include set-card-image((1: 'wheelset25.png', 2:'wheelset23.png', 3:'bearing.png', 4:'repairability.png'));
   }
 }
 
@@ -85,15 +72,22 @@
   padding-top: 60px;
   padding-bottom: 65px;
 
+  .card-image-container{
+    min-width: 315px;
+    height: 239px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   &-main{
     margin-left: 60px;
     width: 660px;
-
   }
 
   &-links{
     font-family: Formular Medium;
     font-size: 16px;
+
 
     .primary-rounded-button
     {
@@ -108,7 +102,6 @@
     font-family: Formular Medium;
     font-size: 23px;
     line-height: 25px;
-    font-weight: normal;
 
     &.innovative {
 
@@ -157,3 +150,145 @@
   }
 }
 
+
+@media (max-width: 375px) {
+  .repairs {
+
+    padding-left: 0;
+
+    .background-wrapper {
+      padding-left: 0;
+    }
+
+    .repair-wagons-brochure,
+    .repair-details-brochure {
+      padding: 13px 0 0 25px;
+
+      h2 {
+        font-size: 25px;
+        line-height: 31px;
+        margin-bottom: 0;
+      }
+    }
+
+    .repair-wagons-brochure {
+
+      li {
+        @include set-card-image((1: '18-100-small.png', 2:'barber-small.png', 3:'18-194-small.png'));
+      }
+
+      li:first-of-type .repair-card-main {
+        padding-top: 20px;
+      }
+
+    }
+
+    .repair-details-brochure {
+
+      li {
+        @include set-card-image((1: 'wheelset25-small.png', 2:'wheelset23-small.png', 3:'bearing-small.png', 4:'repairability-small.png'));
+      }
+    }
+
+    .summary-image-container {
+      background-image: url("../../img/repairs-small.png");
+    }
+
+    .repair-list {
+      margin-top: 20px;
+      li {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        &:first-child{
+          padding-top: 0;
+        }
+      }
+    }
+
+    .repair-card {
+      flex-wrap: wrap;
+      padding: 0;
+
+      table{
+        border-spacing: 0;
+        margin-left: 0;
+        display: table;
+      }
+
+      tbody {
+        display: flex;
+      }
+
+      tr {
+        display: inline-flex;
+        flex-wrap: wrap;
+      }
+
+      th {
+        //width: 175px;
+        display: inline-block;
+        margin-right: 0;
+        //&:first-child tr{
+        //  margin-right: 50px;
+        //}
+        //&:last-child tr{
+        //  margin-right: -60px;
+        //}
+      }
+
+      td {
+        max-width: 100px;
+        align: left;
+      }
+
+      h3 {
+        margin-top: 0;
+        margin-bottom: 18px;
+        font-size: 20px;
+        line-height: 24px;
+
+        &.innovative {
+
+          &::after {
+            margin-top: 15px;
+            margin-left: 0;
+          }
+        }
+
+      }
+
+      p{
+        margin-bottom: 30px;
+      }
+
+      &-main {
+        padding-top: 20px;
+        margin-left: 0;
+        max-width: 325px;
+      }
+
+      &-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .primary-rounded-button
+      {
+        max-width: 325px;
+        height: 58px;
+        margin-right: 0;
+        margin-bottom: 27px;
+      }
+
+      .card-image-container {
+        max-width: 327px;
+        height: 130px;
+      }
+
+    }
+  }
+}
+
+@import "repairs-adaptive";
+@import "../page-summary/page-summary-adaptive";

@@ -5,8 +5,10 @@
         width: 191px;
         height: 28px;
     }
+
     .mobile-aside-menu {
-        .aside-icon{
+        .aside-icon.mail-icon,
+        .aside-icon.menu-icon{
             width: 56px;
             height: 56px;
         }
@@ -14,10 +16,12 @@
             padding: 0;
         }
     }
+
     .main-header{
-        min-height: 55px;
+        min-height: 56px;
     }
 }
+
 
 @media (max-width: 1209px)
 {
@@ -38,9 +42,4 @@
     .mobile-aside-menu{
         display: flex;
     }
-}
-
-@media (max-width: 375px) {
-
-
 }

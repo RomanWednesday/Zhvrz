@@ -2,7 +2,7 @@ $text-blue: #0101BF;
 $site-light-gray: #333333;
 $borderColor: rgba(33, 33, 33, 0.05);
 
-@mixin menu-icons {
+%menu-icons {
   .aside-open-menu {
     background-image: url("../../img/menu-icon.svg");
     background-repeat: no-repeat;
@@ -31,5 +31,14 @@ $borderColor: rgba(33, 33, 33, 0.05);
 
   button {
     cursor: pointer;
+  }
+}
+
+
+@mixin set-card-image($images){
+  @each $child, $image in $images{
+    &:nth-child(#{$child}) .card-image-container{
+      background-image: url("../../img/" + $image);
+    }
   }
 }

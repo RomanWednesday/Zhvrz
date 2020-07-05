@@ -9,7 +9,7 @@
   left: 0;
   height: 100vh;
 
-  @include menu-icons;
+  @extend %menu-icons;
 
   .aside-menu.white-aside,
   .mobile-aside-menu.white-aside {

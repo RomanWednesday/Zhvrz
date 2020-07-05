@@ -1,0 +1,48 @@
+@import "../breadcrumbs/breadcrumbs-adaptive";
+
+
+@media (max-width: 375px){
+
+    .page-summary {
+        flex-wrap: wrap;
+
+        &-main {
+            margin-bottom: 65px;
+        }
+
+        &-button {
+            max-width: 325px;
+            height: 58px;
+            margin-right: 0;
+            margin-bottom: 27px;
+        }
+
+        &-links {
+        justify-content: center;
+        }
+
+        .summary-text-container{
+            padding: 15px 0px 30px 24px;
+            max-width: 355px;
+        }
+        h1 {
+            font-size: 30px;
+            line-height: 37px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+
+        p {
+            margin-top: 4px;
+        }
+    }
+
+    @include breadcrumbs-adaptive;
+
+    .summary-image-container {
+        height: 200px;
+        max-width: 375px;
+        order: -1;
+    }
+
+}
