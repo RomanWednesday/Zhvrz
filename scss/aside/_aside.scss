@@ -17,6 +17,11 @@
     transform: rotate(0deg);
     transition: 0.2s ease-in-out;
     cursor: pointer;
+    &.white {
+      span {
+        background-color: white;
+      }
+    }
     &.open {
       span {
         &:nth-child(1) {
