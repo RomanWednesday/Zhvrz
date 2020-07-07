@@ -3,6 +3,8 @@ const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
+var cssmin = require('gulp-cssmin');
+var rename = require('gulp-rename');
 
 gulp.task('sass', function (done) {
     gulp.src('scss/**/*.scss')
@@ -10,6 +12,8 @@ gulp.task('sass', function (done) {
         .pipe(sourcemaps.init())
         .pipe(autoprefixer(['last 10 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(sourcemaps.write())
+        .pipe(cssmin())
+        .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('dist/css'))
         .pipe(browserSync.stream());
 

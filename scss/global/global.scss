@@ -1,4 +1,11 @@
-@import "variables";
+@import "../variables";
+@import '../aside/aside';
+@import '../menu-aside';
+@import '../search-aside';
+@import '../main-header/main-header';
+@import '../main-footer/main-footer';
+@import '../contacts';
+@import '../fonts';
 
 body {
   margin: 0 auto;
@@ -192,6 +199,12 @@ a.primary-link {
 }
 
 @media (max-width: 375px) {
+  .main-content{
+    padding-left: 0;
+  }
+  .input-control{
+    width: auto;
+  }
   input {
     font-size: 20px;
     padding-bottom: 16px;
