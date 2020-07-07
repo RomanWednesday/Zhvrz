@@ -87,6 +87,7 @@
 
 .block-request {
   max-width: 483px;
+  padding-top:32px;
   flex-grow: 1;
   form {
     display: flex;
@@ -126,6 +127,12 @@
 
 .request-input-group {
     padding-top: 8px;
+    .input-control {
+      margin-bottom: 60px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
 }
 
 

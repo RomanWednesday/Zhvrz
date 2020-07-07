@@ -1,0 +1,19 @@
+.input-control {
+    width: 412px;
+    &.search {
+        &::after {
+            position: absolute;
+            bottom: 24px;
+            right: 0;
+            display: inline-block;
+            content: "";
+            width: 32px;
+            height: 32px;
+            background: url("../../img/search-icon.svg");
+            background-repeat: no-repeat;
+        }
+    }
+    input {
+        padding-right: 32px;
+    }
+}

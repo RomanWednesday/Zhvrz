@@ -39,19 +39,48 @@ label {
   color: rgba(33, 33, 33, 1);
 }
 
-input,
-input::placeholder {
+input {
   color: rgba(33, 33, 33, 1);
-  font-family: Formular Medium;
   font-size: 23px;
   line-height: 32px;
   padding-bottom: 20px;
-  padding-top: 8px;
+  padding-top: 12px;
+  outline: none;
+  font-family: Formular Medium;
+  position: relative;
+}
+
+.input-control {
+  position: relative;
+  .text {
+    position: absolute;
+    top: 16px;
+    font-family: Formular Medium;
+    font-size: 23px;
+    color: rgba(33, 33, 33, 0.5);
+    pointer-events: none;
+    transition: 0.2s ease all;
+    margin: 0;
+  }
 }
 
 input[type="text"] {
   border: none;
-  border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+  border-bottom: 2px solid rgba(33, 33, 33, 0.2);
+
+  &:focus {
+    border-color: $text-blue;
+  }
+  &:focus ~ .text {
+    color: rgba(33, 33, 33, 1);
+    font-size: 16px;
+    top: -18px;
+  }
+  &:not(:focus):valid ~ .text {
+    color: rgba(33, 33, 33, 1);
+    font-size: 16px;
+    top: -18px;
+  }
 }
 
 h1 {
@@ -163,8 +192,7 @@ a.primary-link {
 }
 
 @media (max-width: 375px) {
-  input,
-  input::placeholder {
+  input {
     font-size: 20px;
     padding-bottom: 16px;
     padding-top: 0;

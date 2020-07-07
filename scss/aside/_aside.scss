@@ -78,12 +78,18 @@
     background-image: url("../../img/search-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 5%;
+    &.opened {
+      background-image: url("../../img/close-icon.svg");
+    }
   }
 
   .aside-mail {
     background-image: url("../../img/mail-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
+    &.open{
+      background-image: url("../../img/close-icon.svg");
+    }
   }
 
   .aside-icon {

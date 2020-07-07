@@ -1,4 +1,4 @@
-.burger-menu {
+.alt-menu {
   position: fixed;
   left: 80px;
   height: 100vh;
@@ -9,6 +9,29 @@
   overflow-y: auto;
   padding-top: 8px;
   display: none;
+  &#alt-menu-3 {
+    padding: 0 60px;
+    padding-top: 8px;
+    h2 {
+      margin-top: 32px;
+      margin-bottom: 92px;
+    }
+    .block-request {
+      .input-control:last-child {
+        margin-bottom: 58px;
+      }
+    }
+  }
+  &#alt-menu-2 {
+    padding-left: 60px;
+    input {
+      width: 412px;
+    }
+    h2 {
+      margin-top: 32px;
+      margin-bottom: 280px;
+    }
+  }
   &.opened {
     display: block;
   }
