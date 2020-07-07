@@ -78,6 +78,9 @@
     background-image: url("../../img/search-icon.svg");
     background-repeat: no-repeat;
     background-position: 50% 5%;
+    &.white {
+      background-image: url("../../img/search-icon-white.svg");
+    }
     &.opened {
       background-image: url("../../img/close-icon.svg");
     }
@@ -87,7 +90,7 @@
     background-image: url("../../img/mail-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
-    &.open{
+    &.open {
       background-image: url("../../img/close-icon.svg");
     }
   }
@@ -99,23 +102,6 @@
 
   button {
     cursor: pointer;
-  }
-}
-
-.aside-menu.white-aside,
-.mobile-aside-menu.white-aside {
-  border-right: 1px solid rgba(255, 255, 255, 0.05);
-
-  .aside-open-menu {
-    background-image: url("../../img/menu-icon-white.svg");
-  }
-
-  .aside-search {
-    background-image: url("../../img/search-icon-white.svg");
-  }
-
-  .aside-mail {
-    background-image: url("../../img/mail-icon-white.svg");
   }
 }
 

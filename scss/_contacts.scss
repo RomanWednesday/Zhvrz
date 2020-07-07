@@ -1,5 +1,4 @@
 .contacts-section {
-
   padding: 80px 80px;
   p {
     margin: 0 0 35px;
@@ -61,7 +60,7 @@
 
 //<----------contacts-list------------->
 
-.contacts-list{
+.contacts-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -70,11 +69,11 @@
     max-width: 200px;
   }
 
-  h3{
+  h3 {
     margin-top: 0;
   }
 
-  .contact{
+  .contact {
     margin-top: 0;
     color: $text-blue;
     font-family: Formular Medium;
@@ -87,7 +86,7 @@
 
 .block-request {
   max-width: 483px;
-  padding-top:32px;
+  padding-top: 32px;
   flex-grow: 1;
   form {
     display: flex;
@@ -100,6 +99,13 @@
     width: 100%;
   }
   .primary-button {
+    font-family: Formular;
+    color: $text-blue;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    border: 2px solid $text-blue;
+    border-radius: 3px;
     position: relative;
     max-width: 482px;
     height: 60px;
@@ -107,11 +113,10 @@
     text-align: left;
     position: relative;
 
-    &::after{
+    &::after {
       position: absolute;
-      right:32px;
+      right: 32px;
       top: 22px;
-
       content: " ";
       display: block;
       width: 50px;
@@ -120,27 +125,25 @@
       background-repeat: no-repeat;
       background-position: 95% 50%;
     }
-
+    &:focus {
+      background-color: $text-blue;
+      color: white;
+    }
   }
-
 }
 
 .request-input-group {
-    padding-top: 8px;
-    .input-control {
-      margin-bottom: 60px;
-      &:last-child{
-        margin-bottom: 58px;
-      }
+  padding-top: 8px;
+  .input-control {
+    margin-bottom: 60px;
+    &:last-child {
+      margin-bottom: 58px;
     }
+  }
 }
 
-
-
 @media (max-width: 375px) {
-
   .contacts {
-
     &-section {
       padding: 40px 0 40px 24px;
 
@@ -150,14 +153,14 @@
 
       .blocks-wrapper {
         margin-top: 10px;
-        }
+      }
     }
-    &-list{
-      .contact{
+    &-list {
+      .contact {
         font-size: 20px;
       }
     }
-}
+  }
   .block-contacts {
     margin-bottom: 20px;
     margin-right: 0;
@@ -171,19 +174,19 @@
     }
 
     & .contacts-phone {
-        p {
-          margin-bottom: 15px;
-        }
+      p {
+        margin-bottom: 15px;
       }
-    & .contacts-map{
-        img{
-          height: 144px;
-          width: 327px;
-        }
+    }
+    & .contacts-map {
+      img {
+        height: 144px;
+        width: 327px;
       }
+    }
   }
 
-  .block-request{
+  .block-request {
     padding-right: 10px;
   }
   .request-input-group {

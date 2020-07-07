@@ -1,11 +1,11 @@
 @import "../variables";
-@import '../aside/aside';
-@import '../menu-aside';
-@import '../search-aside';
-@import '../main-header/main-header';
-@import '../main-footer/main-footer';
-@import '../contacts';
-@import '../fonts';
+@import "../aside/aside";
+@import "../menu-aside";
+@import "../search-aside";
+@import "../main-header/main-header";
+@import "../main-footer/main-footer";
+@import "../contacts";
+@import "../fonts";
 
 body {
   margin: 0 auto;
@@ -154,37 +154,31 @@ h3 {
   max-width: 1126px;
 }
 
-.primary-button {
-  font-family: Formular;
-  color: $text-blue;
-  font-size: 16px;
-  line-height: 20px;
-  cursor: pointer;
-  border: 2px solid $text-blue;
-  border-radius: 3px;
-
-  &:focus {
-    outline: none;
-    border-color: black;
-  }
-}
-
 .primary-rounded-button {
   font-family: Formular Bold;
-  background-image: url("../../img/primary-button-blue.svg");
+  clip-path: polygon(9% 0, 91% 0, 100% 25%, 100% 75%, 91% 100%, 9% 100%, 0 75%, 0 25%);
+  border-radius: 20px;
   background-size: 100% 100%;
+  background-color: $text-blue;
+  color: white;
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
+
+  &:hover {
+    background-color: #2525e8;
+    color: white;
+  }
 
   color: #fff;
   &.transparent {
-    background-image: url("../../img/primary-button-white.svg");
     color: $text-blue;
-  }
-
-  &.trans {
-    background-image: url("../../img/primary-button-transition.svg");
+    background-color: white;
+    
+    &:active {
+      background-color: $text-blue;
+      color: white;
+    }
   }
 }
 
@@ -199,10 +193,10 @@ a.primary-link {
 }
 
 @media (max-width: 375px) {
-  .main-content{
+  .main-content {
     padding-left: 0;
   }
-  .input-control{
+  .input-control {
     width: auto;
   }
   input {

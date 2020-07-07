@@ -61,6 +61,8 @@
             img {
                 height: auto;
                 width: 100%;
+                clip-path: polygon(3% 0, 100% 0, 100% 0, 100% 93%, 97% 100%, 0 100%, 0 100%, 0 6%);
+                border-radius: 29px 0 32px;
             }
         }
     }

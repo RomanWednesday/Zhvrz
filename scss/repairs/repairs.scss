@@ -42,8 +42,6 @@
   }
 }
 
-
-
 // repair brochure
 
 .repair-wagons-brochure,
@@ -63,7 +61,7 @@
 }
 
 .repair-list {
-  margin:0;
+  margin: 0;
   margin-top: -15px;
 }
 
@@ -71,27 +69,39 @@
   padding-top: 15px;
 }
 
-.repair-card{
-
-  display:flex;
+.repair-card {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 65px;
 
-  &-main{
+  &-main {
     margin-left: 60px;
     width: 660px;
-
   }
 
-  &-links{
+  &-links {
+    display: flex;
+    justify-content: start;
+    align-items: center;
     font-family: Formular Medium;
     font-size: 16px;
-
-    .primary-rounded-button
-    {
+    .btn-border {
+      position: relative;
+      margin-right: 35px;
+      clip-path: polygon(9% 0, 91% 0, 100% 25%, 100% 75%, 91% 100%, 9% 100%, 0 75%, 0 25%);
+      background-color: $text-blue;
+      width: 172px;
+      height: 62px;
+      border-radius: 20px;
+      .primary-rounded-button{
+        position: relative;
+        top: 2px;
+        left: 1px;
+      }
+    }
+    .primary-rounded-button {
       width: 170px;
       height: 58px;
-      margin-right: 35px;
     }
   }
 
@@ -103,10 +113,9 @@
     font-weight: normal;
 
     &.innovative {
-
-      &::after{
+      &::after {
         margin-left: 20px;
-        content:"Инновационный состав";
+        content: "Инновационный состав";
         display: inline-block;
         color: #fff;
         background-color: #333333;
@@ -119,7 +128,7 @@
         width: 185px;
         height: 18px;
         border-radius: 4px;
-        padding: 5px ;
+        padding: 5px;
         font-size: 14px;
         line-height: 17px;
 
@@ -128,7 +137,7 @@
     }
   }
 
-  p{
+  p {
     margin: 16px 0 50px 0;
   }
 
@@ -148,4 +157,3 @@
     font-weight: normal;
   }
 }
-

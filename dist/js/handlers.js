@@ -2,6 +2,7 @@ const menuBtn = document.querySelector('.aside-open-menu');
 const searchBtn = document.querySelector('.aside-search');
 const mailBtn = document.querySelector('.aside-mail');
 const humburgerBtn = document.querySelector('.burger-box')
+
 const menu = document.querySelector('#alt-menu-1');
 const searchMenu = document.querySelector('#alt-menu-2');
 const contactMenu = document.querySelector('#alt-menu-3');

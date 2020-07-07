@@ -1,6 +1,6 @@
 @import "../variables";
-@import '../navigation_block';
-@import '../company-navigation-list';
+@import "../navigation_block";
+@import "../company-navigation-list";
 
 .leadership {
     padding: 25px 80px 0 80px;
@@ -36,14 +36,7 @@
         border-radius: 5px;
         display: flex;
         margin-bottom: 40px;
-        .leader-photo {
-            max-width: 275px;
-            max-height: 275px;
-            .img {
-                height: auto;
-                width: 100%;
-            }
-        }
+
         &:last-child {
             margin-bottom: 0;
         }
@@ -66,9 +59,34 @@
                 font-weight: bold;
             }
         }
+        .btn-border {
+            display: inline-block;
+            position: relative;
+            background-color: $text-blue;
+            width: 204px;
+            height: 64px;
+            clip-path: polygon(9% 0, 91% 0, 100% 25%, 100% 75%, 91% 100%, 9% 100%, 0 75%, 0 25%);
+            .primary-rounded-button {
+                clip-path: polygon(8% 0, 92% 0, 100% 23%, 100% 76%, 92% 100%, 8% 100%, 0 75%, 0 25%);
+                position: relative;
+                width: 200px;
+                height: 60px;
+                top: 2px;
+                left: 2px;
+            }
+        }
         p {
             margin-top: 0;
         }
+    }
+}
+
+.leader-photo {
+    max-width: 275px;
+    max-height: 275px;
+    img {
+        height: auto;
+        clip-path: polygon(10% 0, 100% 0, 100% 0, 100% 91%, 91% 100%, 0 100%, 0 100%, 0 10%);
     }
 }
 
@@ -85,13 +103,65 @@
         margin-bottom: 20px;
         img {
             max-width: 150px;
+            clip-path: polygon(13% 0, 100% 0, 100% 0, 100% 92%, 89% 100%, 0 100%, 0 100%, 0 9%);
         }
-        p{
+        p {
             margin-top: 8px;
         }
         p.text {
             margin-top: 20px;
             margin-bottom: 0;
         }
+    }
+}
+
+.modal {
+    z-index: 3;
+    padding: 24px 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 831px;
+    max-height: 608px;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 0 4px 20px -6px;
+    display: none;
+    transform: scale(1);
+    transition: all 2s;
+    &.opened {
+        display: block;
+        transform: scale(1);
+    }
+    .modal-header {
+        position: relative;
+        .close-button {
+            display: inline-block;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-image: url("../../img/black-close-icon.svg");
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+        h2 {
+            margin-bottom: 0;
+            margin-top: 16px;
+        }
+        p.text {
+            font-weight: 700;
+            margin-bottom: 32px;
+        }
+    }
+}
+
+.modal-content {
+    .leader-photo {
+        margin-top: 40px;
+        margin-bottom: 32px;
     }
 }

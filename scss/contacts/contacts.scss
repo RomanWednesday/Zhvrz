@@ -72,12 +72,11 @@
     }
     .aside-search {
         flex-grow: 1;
-        background-image: url("../../img/search-icon.svg");
+        background-image: url("../../img/search-icon-white.svg");
         background-repeat: no-repeat;
-        background-position: 50% 5%;
     }
     .aside-mail {
-        background-image: url("../../img/mail-icon.svg");
+        background-image: url("../../img/white-email-icon.svg");
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -114,5 +113,39 @@
     h3 {
         margin: 0;
         color: #0101bf;
+    }
+    .btn-border {
+        position: relative;
+        height: 65px;
+        margin-top: 16px;
+        width: 100%;
+        display: inline-block;
+        background-color: $text-blue;
+        clip-path: polygon(9% 0, 91% 0, 100% 25%, 100% 75%, 91% 100%, 9% 100%, 0 75%, 0 25%);
+        .primary-rounded-button {
+            position: relative;
+            height: 61px;
+            width: 273px;
+            bottom: 30px;
+            left: 2px;
+            &::before {
+                display: none;
+            }
+        }
+    }
+    .primary-rounded-button {
+        margin-top: 32px;
+        position: relative;
+        height: 65px;
+        width: 100%;
+        &::before {
+            content: "";
+            display: inline-block;
+            position: relative;
+            background-image: url("../../img/map-pointer.svg");
+            height: 25px;
+            width: 25px;
+            right: 12px;
+        }
     }
 }
