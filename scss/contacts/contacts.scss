@@ -34,18 +34,6 @@
 
 .main-header {
     border-bottom: 1px solid rgba(white, 0.05);
-    .callback {
-        font-family: "Formular Bold";
-        font-size: 13px;
-        text-transform: uppercase;
-        color: white;
-    }
-    .phone-number {
-        color: white;
-        &::before {
-            display: none;
-        }
-    }
 
     .main-navigation {
         .navigation-item {

@@ -7,11 +7,18 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/global/global.min.css">
-    <link rel="stylesheet" href="assets/css/contacts/contacts.min.css">
+    <link rel="stylesheet" href="assets/css/main/main.min.css">
 </head>
 
 <body>
-    <div class="contacts">
+    <div class="main">
+        <!-- Слайдер -->
+        <div class="slider-box">
+            <div class="slider-wrapper">
+                <img class="slide" src="assets/img/first-main-img.png">
+                <img class="slide" src="assets/img/second-main-img.png">
+            </div>
+        </div>
         <!-- Боковое меню -->
         <aside class="aside-menu">
             <button type="button" class="aside-open-menu">
@@ -110,12 +117,12 @@
             <header class="main-header">
                 <div class="header-wrapper">
                     <nav class="main-navigation">
-                        <a href="main.html"><img src="assets/img/logo-white.svg" width="224" height="33"
+                        <a href="#"><img src="assets/img/logo-white.svg" width="224" height="33"
                                 alt="Железногорский вагоноремонтный завод"></a>
                         <ul class="navigation-list">
                             <li class="navigation-item"><a href="activities.html">Направления</a></li>
                             <li class="navigation-item"><a href="company-history.html">Предприятие</a></li>
-                            <li class="navigation-item active-item"><a href="#">Контакты</a></li>
+                            <li class="navigation-item"><a href="contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="header-contacts">
@@ -125,24 +132,34 @@
                 </div>
             </header>
             <!-- Контент -->
-            <section class="contacts-content">
-                <div class="contacts-content-wrapper">
-                    <div class="contacts-block">
-                        <h1>Контакты</h1>
-                        <p>307170, Железногорск, Курская область, Промплощадка-2</p>
-                        <p class="text">Телефон</p>
-                        <h3>8 800 300 30 30</h3>
-                        <p>Пн-Пт, 9:00 - 19:00</p>
-                        <p class="text">E-mail</p>
-                        <h3>hello@zhvrz.ru</h3>
-                        <a class="primary-rounded-button">
-                            Проложить маршрут
-                        </a>
-                        <div class="btn-border">
-                            <a class="primary-rounded-button transparent">
-                                Скачать реквизиты
-                            </a>
+            <section class="main-page-content">
+                <div class="main-page-content-wrapper">
+                    <div class="advantages">
+                        <div class="titles">
+                            <h1 class="title-1">
+                                Экспертный ремонт
+                                19 видов грузовых вагонов
+                            </h1>
+                            <h1 class="title-2 opacity">
+                                Высокое качество ремонта вагонов
+                            </h1>
                         </div>
+                        <p>Небольшое описание данного преимущества,
+                            которое выгодно выделяет компанию среди конкурентов
+                        </p>
+                        <div class="actions">
+                            <a class="primary-rounded-button transparent">
+                                Скачать презентацию
+                            </a>
+                            <a class="calculate-btn" href="">Рассчитать стоимость</a>
+                        </div>
+                    </div>
+                    <div class="pagination-block">
+                        <div class="arrow-left"></div>
+                        <div class="page-number">
+                            <pre><p><span class="current">01</span> / <span class="count">04</span></p></pre>
+                        </div>
+                        <div class="arrow-right"></div>
                     </div>
                 </div>
             </section>
@@ -150,5 +167,6 @@
     </div>
 </body>
 <script src="assets/js/handlers.js"></script>
+<script src="assets/js/slider.js"></script>
 
 </html>

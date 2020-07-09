@@ -5,6 +5,9 @@
   height: 80px;
   padding: 0 80px;
   .callback {
+    &.white {
+      color: white;
+    }
     font-family: "Formular Bold";
     font-size: 13px;
     text-transform: uppercase;
@@ -20,12 +23,22 @@
   }
 
   .phone-number {
+    position: relative;
     margin: 0;
     font-size: 13px;
     line-height: 16px;
 
+    &.white {
+      color: white;
+      &::before {
+        background-image: url("../../img/white-phone.svg");
+      }
+    }
+
     &::before {
-      vertical-align: middle;
+      position: absolute;
+      bottom: -5px;
+      left: -35px;
       content: " ";
       display: inline-block;
       background-image: url("../../img/phone-icon.svg");
@@ -85,7 +98,6 @@
 }
 
 .mobile-aside-menu {
-
   display: none;
   //height: 56px;
 

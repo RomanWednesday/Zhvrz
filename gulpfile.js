@@ -24,6 +24,7 @@ gulp.task('serve', function (done) {
 
     browserSync.init({
         server: 'dist',
+        startPath: 'main.html',
         notify: false
     });
 
