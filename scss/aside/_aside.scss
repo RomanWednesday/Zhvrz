@@ -22,7 +22,7 @@
         background-color: white;
       }
     }
-    &.open {
+    &.opened {
       span {
         &:nth-child(1) {
           top: 6px;
@@ -90,7 +90,7 @@
     background-image: url("../../img/mail-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
-    &.open {
+    &.opened {
       background-image: url("../../img/close-icon.svg");
     }
   }

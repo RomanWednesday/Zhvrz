@@ -91,11 +91,17 @@ body {
         flex-grow: 1;
         background-image: url("../../img/search-icon-white.svg");
         background-repeat: no-repeat;
+        &.opened {
+            background-image: url("../../img/menu-close-white.svg");
+        }
     }
     .aside-mail {
         background-image: url("../../img/white-email-icon.svg");
         background-repeat: no-repeat;
         background-position: center;
+        &.opened {
+            background-image: url("../../img/menu-close-white.svg");
+        }
     }
     height: 100vh;
 

@@ -3,69 +3,79 @@ const searchBtn = document.querySelector('.aside-search');
 const mailBtn = document.querySelector('.aside-mail');
 const humburgerBtn = document.querySelector('.burger-box')
 
-const menu = document.querySelector('#alt-menu-1');
+const navMenu = document.querySelector('#alt-menu-1');
 const searchMenu = document.querySelector('#alt-menu-2');
 const contactMenu = document.querySelector('#alt-menu-3');
 
-function closeOtherModal() {
+const callbackBtn = document.querySelector('.callback');
+
+const isVisible = elem => !!elem && !!(elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length);
+
+
+const openMailMenu = (e) => {
     if (searchMenu.classList[1]) {
         searchMenu.classList.toggle('opened');
         searchBtn.classList.toggle('opened');
     }
-    if (menu.classList[1]) {
-        menu.classList.toggle('opened');
-        humburgerBtn.classList.toggle('open')
+    if (navMenu.classList[1]) {
+        navMenu.classList.toggle('opened');
+        humburgerBtn.classList.toggle('opened')
     }
-    if (contactMenu.classList[1]) {
-        contactMenu.classList.toggle('opened');
-        mailBtn.classList.toggle('open')
-    }
+    contactMenu.classList.toggle('opened');
+    mailBtn.classList.toggle('opened')
+    e.stopPropagation();
 }
 
-
-menuBtn.addEventListener('click', () => {
+menuBtn.addEventListener('click', (e) => {
     if (contactMenu.classList[1]) {
         contactMenu.classList.toggle('opened');
-        mailBtn.classList.toggle('open')
+        mailBtn.classList.toggle('opened')
     }
     if (searchMenu.classList[1]) {
         searchMenu.classList.toggle('opened');
         searchBtn.classList.toggle('opened');
     }
-    humburgerBtn.classList.toggle('open')
-    menu.classList.toggle('opened');
+    humburgerBtn.classList.toggle('opened')
+    navMenu.classList.toggle('opened');
+    e.stopPropagation();
 })
 
-menu.addEventListener('click', (e) => {
+navMenu.addEventListener('click', (e) => {
     if (e.target.classList[0] === 'menu-item' && e.target.classList[1] === 'expanded') {
         e.target.parentNode.classList.toggle('opened');
         e.target.classList.toggle('opened');
+        e.stopPropagation();
     }
 })
 
-searchBtn.addEventListener('click', () => {
-    if (menu.classList[1]) {
-        menu.classList.toggle('opened');
-        humburgerBtn.classList.toggle('open')
+searchBtn.addEventListener('click', (e) => {
+    if (navMenu.classList[1]) {
+        navMenu.classList.toggle('opened');
+        humburgerBtn.classList.toggle('opened')
     }
     if (contactMenu.classList[1]) {
         contactMenu.classList.toggle('opened');
-        mailBtn.classList.toggle('open')
+        mailBtn.classList.toggle('opened')
     }
     searchBtn.classList.toggle('opened');
     searchMenu.classList.toggle('opened');
+    e.stopPropagation();
 })
 
-mailBtn.addEventListener('click', () => {
-    if (searchMenu.classList[1]) {
-        searchMenu.classList.toggle('opened');
-        searchBtn.classList.toggle('opened');
+mailBtn.addEventListener('click', openMailMenu)
+
+callbackBtn.addEventListener('click', openMailMenu);
+
+const onClickAway = (elem, btn) => (e) => {
+    if (!elem.contains(e.target) && isVisible(elem)) {
+        elem.classList.toggle('opened');
+        btn.classList.toggle('opened');
     }
-    if (menu.classList[1]) {
-        menu.classList.toggle('opened');
-        humburgerBtn.classList.toggle('open')
-    }
-    contactMenu.classList.toggle('opened');
-    mailBtn.classList.toggle('open')
+}
+
+document.querySelector('body').addEventListener('click', (e) => {
+    onClickAway(contactMenu, mailBtn)(e);
+    onClickAway(searchMenu, searchBtn)(e);
+    onClickAway(navMenu, humburgerBtn)(e);
 })
 
