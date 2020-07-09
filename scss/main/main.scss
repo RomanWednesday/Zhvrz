@@ -1,23 +1,69 @@
 .main {
-    /* background: url("../../img/first-main-img.png") no-repeat; */
     background-color: transparent;
     background-size: cover;
     background-position: top;
+    overflow: hidden;
+}
+body {
+    background-color: black;
 }
 
 .slider-box {
-    overflow: hidden;
     position: absolute;
     height: 100vh;
+    width: 100%;
     z-index: -1;
-    .slider-wrapper {
-        display: flex;
-        flex-direction: row;
-        transition: transform 0.8s ease;
+    overflow: hidden;
+    .slides {
+        position: relative;
+        width: 100%;
+        height: 100%;
         .slide {
-            height: 100vh;
-            max-width: 100%;
-            flex: 0 0 100%;
+            position: absolute;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            .slide-partial {
+                &.left {
+                    position: absolute;
+                    top: 0;
+                    transition: transform 1s ease-in-out;
+                    position: relative;
+                    left: 0;
+                    width: 50%;
+                    transform: translateX(-100%);
+                    img {
+                        object-position: 100% 50%;
+                        transform: translateX(50%);
+                        transition: transform 1s ease-in-out;
+                    }
+                }
+                &.right {
+                    transition: transform 1s ease-in-out;
+                    position: relative;
+                    right: 0;
+                    width: 50%;
+                    transition-delay: 0.2s;
+                    transform: translateX(100%);
+                    img {
+                        object-position: 0% 50%;
+                        transform: translateX(-50%);
+                        transition: transform 1s ease-in-out;
+                    }
+                }
+            }
+            &.active {
+                z-index: -1;
+                .slide-partial {
+                    &.left {
+                        transform: translateX(0);
+                    }
+                    &.right {
+                        transform: translateX(0);
+                    }
+                }
+            }
         }
     }
 }
