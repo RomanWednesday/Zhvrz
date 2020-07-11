@@ -1,0 +1,76 @@
+@import '../variables';
+
+@media (max-width: 375px) {
+    .licenses {
+        padding: 0;
+        padding-top: 25px;
+        .licenses-wrapper {
+            .breadcrumbs,
+            .company-navigation-list {
+                margin: 0 25px;
+            }
+            h1,
+            .license-header {
+                margin-left: 25px;
+            }
+            .company-navigation-list {
+                overflow-x: auto;
+            }
+            .license-header {
+                margin-top: 24px;
+                margin-bottom: 0;
+            }
+            .certificate-header {
+                margin-left: 25px;
+                margin-bottom: 0;
+            }
+            .document-list {
+                .document-item {
+                    padding: 32px 25px;
+                    margin-bottom: 0;
+                    .file-info {
+                        flex-direction: column;
+                        .info {
+                            margin-bottom: 16px;
+                        }
+                        .btn-border {
+                            margin-left: 0;
+                            align-self: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navigation-block {
+        padding: 0;
+        .navigation-block-wrapper {
+            display: flex;
+            flex-direction: column;
+            a {
+                &:first-child {
+                    padding: 32px 0;
+                    border-bottom: 1px solid $borderColor;
+                    text-align: right;
+                    h3 {
+                        margin-right: 25px;
+                        &::before {
+                            align-self: flex-start;
+                            right: 45%;
+                        }
+                    }
+                }
+                &:last-child {
+                    padding: 32px 0;
+                    border-bottom: 1px solid $borderColor;
+                    h3 {
+                        margin-left: 25px;
+                        &::after {
+                            left: 55%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

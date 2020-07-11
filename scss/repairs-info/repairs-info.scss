@@ -133,15 +133,19 @@
   background-repeat: no-repeat;
   background-position: right;
 
+  .mobile-img {
+    display: none;
+  }
+
   color: #fff;
 
   a {
     color: white;
   }
-  .links{
+  .links {
     display: flex;
     justify-content: start;
-    align-items: center ;
+    align-items: center;
   }
   .btn-border {
     position: relative;
@@ -201,3 +205,5 @@
     }
   }
 }
+
+@import './repairs-info-adaptive.scss'

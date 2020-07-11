@@ -1,0 +1,127 @@
+@media (max-width: 376px) {
+  .repairs {
+    padding-left: 0;
+    .background-wrapper {
+      padding: 0;
+      height: 653px;
+      position: relative;
+      background-image: url('../../mob-img/repair-img.png');
+      background-repeat: no-repeat;
+      background-position: top;
+      .page-summary {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        padding: 16px 25px 30px 25px;
+        padding-top: 16px;
+        .page-summary-main {
+          margin-bottom: 40px;
+        }
+        .page-summary-links {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .page-summary-button {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .repair-wagons-brochure {
+    padding: 0 25px;
+    padding-top: 20px;
+    .section-wrapper{
+      h2{
+        margin-bottom: 20px;
+      }
+    }
+    .repair-card {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+      padding-bottom: 32px;
+      .repair-card-main {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+        .innovative{
+          &::after{
+            display: flex;
+            margin-left: 0;
+            margin-top: 8px;
+            text-align: center;
+            justify-content: center;
+          }
+        }
+        table {
+          margin: 0;
+          display: block;
+          width: 100%;
+          margin-bottom: 20px;
+          tbody {
+            display: flex;
+            width: 100%;
+            tr {
+              display: flex;
+              flex-direction: column;
+              flex-wrap: nowrap;
+              th {
+                margin-right: 12px;
+              }
+            }
+          }
+        }
+        .repair-card-links {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .btn-border {
+            margin-right: 0;
+            margin-bottom: 20px;
+            width: 100%;
+            .primary-rounded-button {
+              width: 98%;
+              left: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .repair-details-brochure {
+    padding: 0 25px;
+    .repair-card {
+      display: flex;
+      flex-direction: column;
+      padding: 25px 0;
+      .repair-card-main {
+        margin-left: 0;
+        padding-top: 15px;
+        max-width: 100%;
+        .repair-card-links {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          .btn-border {
+            margin: 0;
+            margin-bottom: 20px;
+            width: 100%;
+            .primary-rounded-button {
+              width: 98%;
+              left: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

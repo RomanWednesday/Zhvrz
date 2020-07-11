@@ -1,0 +1,29 @@
+@media (max-width: 375px) {
+    .history {
+        padding: 25px 25px;
+
+        .history-wrapper {
+            .company-navigation-list {
+                overflow-x: auto;
+            }
+            .history-list {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .history-period {
+        display: none;
+    }
+
+    .navigation-block {
+        padding: 25px 32px;
+        .navigation-block-wrapper {
+            h3 {
+                &::after {
+                    left: 130px;
+                }
+            }
+        }
+    }
+}

@@ -165,3 +165,82 @@
         margin-bottom: 32px;
     }
 }
+
+@media (max-width: 375px) {
+    .leadership {
+        padding: 25px 25px;
+        .leadership-wrapper {
+            .company-navigation-list {
+                overflow-x: auto;
+            }
+            .leader-header{
+                margin-top: 24px;
+            }
+            .leaders-list {
+                .leader-item {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 24px;
+                    .leader-photo{
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .leader-info {
+                        margin: 0;
+                        margin-top: 24px;
+                        .btn-border {
+                            width: 100%;
+                            .primary-rounded-button {
+                                width: 97.5%;
+                                left: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .top-managers-list {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                margin: 0;
+                .top-manager-item {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .navigation-block {
+        padding: 0;
+        .navigation-block-wrapper {
+            display: flex;
+            flex-direction: column;
+            a {
+                &:first-child {
+                    padding: 32px 0;
+                    border-bottom: 1px solid $borderColor;
+                    text-align: right;
+                    h3 {
+                        margin-right: 25px;
+                        &::before {
+                            align-self: flex-start;
+                            right: 62%;
+                        }
+                    }
+                }
+                &:last-child {
+                    padding: 32px 0;
+                    border-bottom: 1px solid $borderColor;
+                    h3 {
+                        margin-left: 25px;
+                        &::after {
+                            left: 40%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

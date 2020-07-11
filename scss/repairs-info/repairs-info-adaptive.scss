@@ -1,0 +1,105 @@
+@media (max-width: 375px) {
+    .repairs-info {
+        padding: 0;
+        .repairs-info-main {
+            .background-wrapper {
+                height: 653px;
+                position: relative;
+                background-image: url("../../mob-img/repair-wagon-img.png");
+                background-repeat: no-repeat;
+                background-position: top;
+                padding-left: 0;
+                .page-summary {
+                    position: absolute;
+                    bottom: 0;
+                    padding: 0 25px;
+                    width: 100%;
+                    background-image: none;
+                    .page-summary-main {
+                        margin-bottom: 20px;
+                    }
+                    .page-summary-links {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .page-summary-button {
+                            margin-right: 0;
+                            margin-bottom: 16px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .repairs-types {
+                padding-top: 30px;
+                .content-wrapper {
+                    padding: 0 25px;
+                    .nav-tabs {
+                        overflow-x: auto;
+                    }
+                }
+            }
+
+            .wagons-types {
+                padding-top: 30px;
+                .content-wrapper {
+                    padding: 0 25px;
+                    padding-bottom: 30px;
+                    h2 {
+                        margin-bottom: 0;
+                    }
+                }
+                .repairs-price-tape {
+                    background-image: url("../../mob-img/repairs-info-img.png");
+                    background-position: top;
+                    background-size: auto;
+                    padding: 0;
+                    height: 476px;
+                    position: relative;
+                    .content-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        position: absolute;
+                        bottom: 0;
+                        padding: 36px 25px 30px 25px;
+                        height: 276px;
+                        align-items: center;
+                        h3 {
+                            width: 80%;
+                            font-size: 23px;
+                            font-weight: 500;
+                        }
+                        .links {
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            .btn-border {
+                                width: 100%;
+                                margin-right: 0;
+                                margin-bottom: 16px;
+                                a {
+                                    width: 98%;
+                                    left: 3px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .navigation-block {
+                padding: 32px 25px 32px 25px;
+                h3 {
+                    width: 70%;
+                    font-weight: 500;
+                    &::after {
+                        position: absolute;
+                        left: 250px;
+                    }
+                }
+            }
+        }
+    }
+}

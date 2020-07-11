@@ -145,7 +145,7 @@
 @media (max-width: 375px) {
   .contacts {
     &-section {
-      padding: 40px 0 40px 24px;
+      padding: 40px 24px 40px 24px;
 
       p {
         margin-bottom: 26px;
@@ -179,15 +179,8 @@
       }
     }
     & .contacts-map {
-      img {
-        height: 144px;
-        width: 327px;
-      }
+      height: 150px;
     }
-  }
-
-  .block-request {
-    padding-right: 10px;
   }
   .request-input-group {
     padding-top: 8px;

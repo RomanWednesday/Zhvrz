@@ -48,9 +48,6 @@
 .repair-details-brochure {
   padding: 0 80px 0 80px;
   h2 {
-    font-family: Formular Bold;
-    font-size: 32px;
-    line-height: 60px;
     margin: 0;
   }
 }
@@ -65,7 +62,7 @@
   margin-top: -15px;
 }
 
-.repair-wagons-brochure li:first-of-type .repair-card-main {
+.repair-wagons-brochure li .repair-card-main {
   padding-top: 15px;
 }
 
@@ -93,7 +90,7 @@
       width: 172px;
       height: 62px;
       border-radius: 20px;
-      .primary-rounded-button{
+      .primary-rounded-button {
         position: relative;
         top: 2px;
         left: 1px;
@@ -157,3 +154,5 @@
     font-weight: normal;
   }
 }
+
+@import './repairs-addaptive.scss';
