@@ -243,4 +243,17 @@
             }
         }
     }
+
+    .modal{
+        height: 100%;
+        &.opened{
+            width: 100%;
+            margin: 0;
+            padding: 24px;
+            max-height: none;
+            .company-navigation-list{
+                overflow: auto;
+            }
+        }
+    }
 }

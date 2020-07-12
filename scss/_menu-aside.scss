@@ -9,6 +9,11 @@
   overflow-y: auto;
   padding-top: 8px;
   display: none;
+  &#alt-menu-1 {
+    .request-input-group {
+      display: none;
+    }
+  }
   &#alt-menu-3 {
     padding: 0 60px;
     padding-top: 8px;
@@ -108,6 +113,75 @@
     }
     &:first-child {
       margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .alt-menu {
+    top: 56px;
+    left: 0;
+    padding-top: 0;
+    box-shadow: none;
+    width: 100%;
+    &#alt-menu-1 {
+      .request-input-group {
+        display: block;
+        padding: 40px 25px;
+        border-bottom: 1px solid $borderColor;
+        margin: 0;
+        .input-control {
+          margin-bottom: 0;
+          .text {
+            top: 0;
+          }
+          input {
+            width: 100%;
+            padding-bottom: 8px;
+            &:focus ~ .text {
+              color: rgba(33, 33, 33, 1);
+              font-size: 16px;
+              top: -18px;
+            }
+            &:not(:focus):valid ~ .text {
+              color: rgba(33, 33, 33, 1);
+              font-size: 16px;
+              top: -18px;
+            }
+          }
+          &::after {
+            bottom: 10px;
+          }
+        }
+      }
+    }
+    &#alt-menu-3 {
+      padding: 0 24px;
+      width: 100%;
+      h2 {
+        margin-bottom: 0;
+      }
+    }
+    .submenu-list {
+      padding: 28px 25px;
+      max-height: 82px;
+      .menu-item {
+        &.expanded {
+          margin: auto;
+          &::after {
+            margin-left: 0;
+            right: -40%;
+            top: 6px;
+          }
+          &.opened {
+            &::after {
+              margin-left: 0;
+              right: -40%;
+              top: 4px;
+            }
+          }
+        }
+      }
     }
   }
 }

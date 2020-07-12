@@ -1,3 +1,5 @@
+const body = document.body;
+
 const menuBtn = document.querySelector('.aside-open-menu');
 const searchBtn = document.querySelector('.aside-search');
 const mailBtn = document.querySelector('.aside-mail');
@@ -9,36 +11,64 @@ const contactMenu = document.querySelector('#alt-menu-3');
 
 const callbackBtn = document.querySelector('.callback');
 
+const mobileMenuBtn = document.querySelector('.mobile-aside-menu .aside-open-menu');
+const mobileHumburgerBtn = mobileMenuBtn.querySelector('.burger-box');
+
+const mobileMailBtn = document.querySelector('.mobile-aside-menu .aside-mail');
+
+
 const isVisible = elem => !!elem && !!(elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length);
 
 
 const openMailMenu = (e) => {
-    if (searchMenu.classList[1]) {
+    if (searchBtn.classList[1]) {
         searchMenu.classList.toggle('opened');
         searchBtn.classList.toggle('opened');
     }
-    if (navMenu.classList[1]) {
+    if (humburgerBtn.classList[1]) {
         navMenu.classList.toggle('opened');
         humburgerBtn.classList.toggle('opened')
+        mobileHumburgerBtn.classList.toggle('opened');
     }
+    
+    body.classList.remove('noScroll')
     contactMenu.classList.toggle('opened');
-    mailBtn.classList.toggle('opened')
+    mailBtn.classList.toggle('opened');
+    mobileMenuBtn.classList.toggle('opened');
+
+    if (contactMenu.classList[1]) {
+        body.classList.add('noScroll')
+    }
     e.stopPropagation();
 }
 
-menuBtn.addEventListener('click', (e) => {
-    if (contactMenu.classList[1]) {
+const openNavMenu = (e) => {
+    if (mailBtn.classList[1]) {
         contactMenu.classList.toggle('opened');
         mailBtn.classList.toggle('opened')
+        mobileMailBtn.classList.toggle('opened');
+
     }
-    if (searchMenu.classList[1]) {
+    if (searchBtn.classList[1]) {
         searchMenu.classList.toggle('opened');
         searchBtn.classList.toggle('opened');
     }
+
+    body.classList.remove('noScroll')
+
+    mobileHumburgerBtn.classList.toggle('opened');
     humburgerBtn.classList.toggle('opened')
     navMenu.classList.toggle('opened');
+
+    if (navMenu.classList[1]) {
+        body.classList.add('noScroll')
+    }
     e.stopPropagation();
-})
+}
+
+menuBtn.addEventListener('click', openNavMenu)
+
+mobileMenuBtn.addEventListener('click', openNavMenu)
 
 navMenu.addEventListener('click', (e) => {
     if (e.target.classList[0] === 'menu-item' && e.target.classList[1] === 'expanded') {
@@ -64,12 +94,15 @@ searchBtn.addEventListener('click', (e) => {
 
 mailBtn.addEventListener('click', openMailMenu)
 
+mobileMailBtn.addEventListener('click', openMailMenu)
+
 callbackBtn.addEventListener('click', openMailMenu);
 
 const onClickAway = (elem, btn) => (e) => {
     if (!elem.contains(e.target) && isVisible(elem)) {
         elem.classList.toggle('opened');
         btn.classList.toggle('opened');
+        body.classList.remove('noScroll');
     }
 }
 
@@ -78,4 +111,3 @@ document.querySelector('body').addEventListener('click', (e) => {
     onClickAway(searchMenu, searchBtn)(e);
     onClickAway(navMenu, humburgerBtn)(e);
 })
-

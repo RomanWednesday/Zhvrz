@@ -11,6 +11,9 @@ body {
   margin: 0 auto;
   font-family: "Formular";
   color: #333333;
+  &.noScroll {
+    overflow: hidden;
+  }
 }
 
 * {
@@ -174,7 +177,7 @@ h3 {
   &.transparent {
     color: $text-blue;
     background-color: white;
-    
+
     &:active {
       background-color: $text-blue;
       color: white;

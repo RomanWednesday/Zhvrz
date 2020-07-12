@@ -1,7 +1,4 @@
 .main {
-    background-color: transparent;
-    background-size: cover;
-    background-position: top;
     overflow: hidden;
 }
 body {
@@ -225,5 +222,54 @@ body {
         background-repeat: no-repeat;
         background-image: url("../../img/white-arrow-right.svg");
         cursor: pointer;
+    }
+}
+
+@media (max-width: 375px) {
+    .slider-box {
+        .slides {
+            .slide {
+                .slide-info {
+                    padding: 30px;
+                    padding-left: 30px;
+                    padding-bottom: 0;
+                    margin: 0 auto;
+                    bottom: 0;
+                    top: 25%;
+                    width: initial;
+                    .title {
+                        font-size: 30px;
+                        line-height: 40px
+                    }
+                    .actions {
+                        display: flex;
+                        flex-direction: column;
+                        .primary-rounded-button{
+                            margin-right: 0;
+                            margin-bottom: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pagination-block {
+        top: 104px;
+        right: 0;
+        justify-content: none;
+        width: 100%;
+        .arrow-left {
+            position: absolute;
+            margin-right: 24px;
+            right: 80px;
+        }
+        .arrow-right {
+            position: absolute;
+            right: 24px;
+        }
+        .page-number {
+            position: absolute;
+            left: 30px;
+        }
     }
 }
