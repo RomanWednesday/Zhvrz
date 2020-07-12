@@ -28,10 +28,6 @@ const nextSlide = () => {
         counter.plus()
         slides[counter.value() - 1].classList.toggle('active');
         currentPage.innerHTML = `0${counter.value()}`;
-        title1.classList.toggle('opacity');
-        title2.classList.toggle('opacity');
-        calculateBtn.classList.toggle('opacity');
-
     }
 }
 
@@ -40,10 +36,7 @@ const prevSlide = () => {
         slides[counter.value() - 1].classList.toggle('active');
         counter.minus()
         slides[counter.value() - 1].classList.toggle('active');
-        currentPage.innerHTML = `0${counter.value()}`;
-        title2.classList.toggle('opacity');
-        title1.classList.toggle('opacity');
-        calculateBtn.classList.toggle('opacity');
+        currentPage.innerHTML = `0${counter.value()}`;        
     }
 }
 

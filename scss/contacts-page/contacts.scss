@@ -62,7 +62,7 @@
         flex-grow: 1;
         background-image: url("../../img/search-icon-white.svg");
         background-repeat: no-repeat;
-        &.opened{
+        &.opened {
             background-image: url("../../img/menu-close-white.svg");
         }
     }
@@ -70,7 +70,7 @@
         background-image: url("../../img/white-email-icon.svg");
         background-repeat: no-repeat;
         background-position: center;
-        &.opened{
+        &.opened {
             background-image: url("../../img/menu-close-white.svg");
         }
     }
@@ -140,6 +140,43 @@
             height: 25px;
             width: 25px;
             right: 12px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .contacts {
+        background-position: -850px -205px;
+        background-size: 400%;
+    }
+    .main-content {
+        position: relative;
+        height: 125vh;
+    }
+    .contacts-content {
+        padding: 0;
+        .contacts-content-wrapper {
+            .contacts-block {
+                position: absolute;
+                bottom: 0;
+                padding: 24px 12px 24px 12px;
+                h1 {
+                    margin-left: 12px;
+                }
+                h3 {
+                    margin-left: 12px;
+                }
+                p {
+                    margin-left: 12px;
+                }
+                .btn-border{
+                    width: 100%;
+                    .primary-rounded-button{
+                        width: 97.8%;
+                        left: 4px;
+                    }
+                }
+            }
         }
     }
 }
