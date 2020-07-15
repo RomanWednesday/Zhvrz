@@ -21,6 +21,12 @@ body {
             width: 100%;
             height: 100%;
             z-index: -2;
+            .slide-partial.left.mobile {
+                display: none;
+            }
+            .slide-partial.right.mobile {
+                display: none;
+            }
             .slide-info {
                 position: absolute;
                 top: 45%;
@@ -229,6 +235,18 @@ body {
     .slider-box {
         .slides {
             .slide {
+                .slide-partial.left {
+                    display: none;
+                    &.mobile {
+                        display: block;
+                    }
+                }
+                .slide-partial.right {
+                    display: none;
+                    &.mobile {
+                        display: block;
+                    }
+                }
                 .slide-info {
                     padding: 30px;
                     padding-left: 30px;
@@ -239,12 +257,12 @@ body {
                     width: initial;
                     .title {
                         font-size: 30px;
-                        line-height: 40px
+                        line-height: 40px;
                     }
                     .actions {
                         display: flex;
                         flex-direction: column;
-                        .primary-rounded-button{
+                        .primary-rounded-button {
                             margin-right: 0;
                             margin-bottom: 24px;
                         }
