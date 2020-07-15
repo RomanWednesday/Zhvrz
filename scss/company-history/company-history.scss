@@ -22,13 +22,13 @@
 .history-period {
     position: fixed;
     right: 0;
-    top: 400px;
+    top: 40%;
     .history-date {
         position: relative;
         &:first-child {
             margin-top: 0;
         }
-        margin-top: 32px;
+        margin-top: 24px;
         font-weight: bold;
 
         &.active {
