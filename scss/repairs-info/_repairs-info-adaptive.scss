@@ -3,15 +3,14 @@
         padding: 0;
         .repairs-info-main {
             .background-wrapper {
-                height: 653px;
+                padding-top: 210px;
+                height: auto;
                 position: relative;
                 background-image: url("../../mob-img/repair-wagon-img.png");
                 background-repeat: no-repeat;
                 background-position: top;
                 padding-left: 0;
                 .page-summary {
-                    position: absolute;
-                    bottom: 0;
                     padding: 0 25px;
                     width: 100%;
                     background-image: none;

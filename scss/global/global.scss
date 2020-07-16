@@ -11,6 +11,7 @@ body {
   margin: 0 auto;
   font-family: "Formular";
   color: #333333;
+  scroll-behavior: smooth;
   &.noScroll {
     overflow: hidden;
   }
@@ -225,5 +226,24 @@ a.primary-link {
     font-size: 20px;
     line-height: 24px;
     font-weight: 600;
+  }
+
+  .breadcrumbs {
+    li:not(:first-child){
+      display: none;
+    }
+    li:last-child{
+      display: block;
+    }
+    li.last:last-child{
+      display: block;
+      &::before{
+        background-image: url('../../mob-img/breadcrumbs-dots-img.svg');
+        background-repeat: no-repeat;
+        background-color: transparent;
+        width: 25px;
+        height: 15px;
+      }
+    }
   }
 }

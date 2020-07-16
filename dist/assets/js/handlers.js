@@ -2,7 +2,6 @@ const body = document.body;
 
 const menuBtn = document.querySelector('.aside-open-menu');
 const searchBtn = document.querySelector('.aside-search');
-const mailBtn = document.querySelector('.aside-mail');
 const humburgerBtn = document.querySelector('.burger-box')
 
 const navMenu = document.querySelector('#alt-menu-1');
@@ -14,8 +13,6 @@ const callbackBtn = document.querySelector('.callback');
 const mobileMenuBtn = document.querySelector('.mobile-aside-menu .aside-open-menu');
 const mobileHumburgerBtn = mobileMenuBtn.querySelector('.burger-box');
 
-const mobileMailBtn = document.querySelector('.mobile-aside-menu .aside-mail');
-
 
 const isVisible = elem => !!elem && !!(elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length);
 
@@ -25,7 +22,7 @@ const openMailMenu = (e) => {
         searchMenu.classList.toggle('opened');
         searchBtn.classList.toggle('opened');
     }
-    if (humburgerBtn.classList[1]) {
+    if (navMenu.classList[1]) {
         navMenu.classList.toggle('opened');
         humburgerBtn.classList.toggle('opened')
         mobileHumburgerBtn.classList.toggle('opened');
@@ -33,8 +30,6 @@ const openMailMenu = (e) => {
     
     body.classList.remove('noScroll')
     contactMenu.classList.toggle('opened');
-    mailBtn.classList.toggle('opened');
-    mobileMenuBtn.classList.toggle('opened');
 
     if (contactMenu.classList[1]) {
         body.classList.add('noScroll')
@@ -43,15 +38,12 @@ const openMailMenu = (e) => {
 }
 
 const openNavMenu = (e) => {
-    if (mailBtn.classList[1]) {
-        contactMenu.classList.toggle('opened');
-        mailBtn.classList.toggle('opened')
-        mobileMailBtn.classList.toggle('opened');
-
-    }
     if (searchBtn.classList[1]) {
         searchMenu.classList.toggle('opened');
         searchBtn.classList.toggle('opened');
+    }
+    if(contactMenu.classList[1]){
+        contactMenu.classList.toggle('opened')
     }
 
     body.classList.remove('noScroll')
@@ -85,16 +77,12 @@ searchBtn.addEventListener('click', (e) => {
     }
     if (contactMenu.classList[1]) {
         contactMenu.classList.toggle('opened');
-        mailBtn.classList.toggle('opened')
     }
     searchBtn.classList.toggle('opened');
     searchMenu.classList.toggle('opened');
     e.stopPropagation();
 })
 
-mailBtn.addEventListener('click', openMailMenu)
-
-mobileMailBtn.addEventListener('click', openMailMenu)
 
 callbackBtn.addEventListener('click', openMailMenu);
 
@@ -107,7 +95,9 @@ const onClickAway = (elem, btn) => (e) => {
 }
 
 document.querySelector('body').addEventListener('click', (e) => {
-    onClickAway(contactMenu, mailBtn)(e);
     onClickAway(searchMenu, searchBtn)(e);
     onClickAway(navMenu, humburgerBtn)(e);
+    if(contactMenu.classList[1]){
+        onClickAway(callbackBtn,contactMenu)(e);
+    }
 })

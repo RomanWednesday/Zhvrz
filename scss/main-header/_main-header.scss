@@ -101,6 +101,7 @@
 
 .mobile-aside-menu {
   display: none;
+  z-index: 1;
 
   .aside-mail {
     border-right: 1px solid $borderColor;
