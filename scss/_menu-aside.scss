@@ -193,4 +193,20 @@
       }
     }
   }
+  .search-result {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $borderColor;
+    margin-bottom: 16px;
+    a {
+      color: $text-blue;
+    }
+    h3 {
+      margin-top: 16px;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
 }

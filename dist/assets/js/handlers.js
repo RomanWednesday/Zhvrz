@@ -98,6 +98,6 @@ document.querySelector('body').addEventListener('click', (e) => {
     onClickAway(searchMenu, searchBtn)(e);
     onClickAway(navMenu, humburgerBtn)(e);
     if(contactMenu.classList[1]){
-        onClickAway(callbackBtn,contactMenu)(e);
+        onClickAway(contactMenu,callbackBtn)(e);
     }
 })

@@ -10,7 +10,7 @@ gulp.task('sass', function (done) {
     gulp.src('scss/**/*.scss')
         .pipe(sass({ outputStyle: 'compact' }).on('error', sass.logError)) // Using gulp-sass
         .pipe(sourcemaps.init())
-        .pipe(autoprefixer(['last 10 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(autoprefixer(['last 15 versions', '< 1%', 'ie 8', 'ie 7', 'safari 13'], { cascade: true }))
         .pipe(sourcemaps.write())
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))

@@ -1,4 +1,18 @@
-@import '../variables';
+@import "../variables";
+
+@media (max-width: 1270px) {
+    .document-list {
+        .document-item {
+            .file-info {
+                .info {
+                    .text{
+                        max-width: 690px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media (max-width: 375px) {
     .licenses {

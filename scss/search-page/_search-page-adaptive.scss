@@ -1,0 +1,9 @@
+@media (max-width: 375px){
+    .search-content {
+        padding: 25px 25px 0 25px;
+        &-wrapper {
+            max-width: 1126px;
+            margin: 0 auto;
+        }
+    }
+};

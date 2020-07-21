@@ -229,16 +229,16 @@ a.primary-link {
   }
 
   .breadcrumbs {
-    li:not(:first-child){
+    li:not(:first-child) {
       display: none;
     }
-    li:last-child{
+    li:last-child {
       display: block;
     }
-    li.last:last-child{
+    li.last:last-child {
       display: block;
-      &::before{
-        background-image: url('../../mob-img/breadcrumbs-dots-img.svg');
+      &::before {
+        background-image: url("../../mob-img/breadcrumbs-dots-img.svg");
         background-repeat: no-repeat;
         background-color: transparent;
         width: 25px;

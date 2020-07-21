@@ -1,6 +1,15 @@
 const historyDate = document.querySelector('.history-date');
 const historyItem = document.querySelector('.history-item');
 
+const navBlock = document.querySelector('.navigation-block');
+const historyPeriod = document.querySelector('.history-period')
+const navList = document.querySelector('.company-navigation-list');
+
+historyPeriod.style.top = `${navList.getBoundingClientRect().bottom}px`;
+if(historyPeriod.getBoundingClientRect().bottom > window.innerHeight) {
+    historyPeriod.style.position = 'absolute';
+}
+
 const createSetter = () => {
     let currentItem = historyItem;
     let currentHistoryDate = historyDate;
@@ -53,4 +62,12 @@ const activateDate = () => {
 
 document.addEventListener('scroll', () => {
     activateDate();
+    if (historyPeriod.getBoundingClientRect().bottom > navBlock.getBoundingClientRect().top) {
+        historyPeriod.style.position = 'absolute';
+        historyPeriod.style.top = `${navBlock.getBoundingClientRect().top + document.documentElement.scrollTop - historyPeriod.getBoundingClientRect().height - 25}px`;
+    } else if (historyPeriod.getBoundingClientRect().top > navList.getBoundingClientRect().bottom + document.documentElement.scrollTop){
+        historyPeriod.style.position = 'fixed';
+        historyPeriod.style.top = `${navList.getBoundingClientRect().bottom + document.documentElement.scrollTop}px`
+    }
 })
+

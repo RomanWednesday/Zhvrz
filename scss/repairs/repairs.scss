@@ -1,4 +1,5 @@
 @import "../variables";
+@import '../page-summary/page-summary.scss';
 
 .repairs {
   padding-left: 80px;
@@ -155,4 +156,4 @@
   }
 }
 
-@import './repairs-addaptive.scss';
+@import "./repairs-addaptive.scss";
